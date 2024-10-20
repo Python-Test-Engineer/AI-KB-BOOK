@@ -1,4 +1,4 @@
-# The Pytest Cookbook - *recipes with videos and repos*
+# AI Knowledge Bases
 
 ## Motivation
 
