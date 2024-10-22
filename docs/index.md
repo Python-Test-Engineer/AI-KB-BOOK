@@ -1,5 +1,4 @@
-# Building AI Powered Knowledge Stores (AI-KS)
-
+# Building AI Powered Knowledge Stores 
 ## Knowledge Stores
 
 ## AI Powered
