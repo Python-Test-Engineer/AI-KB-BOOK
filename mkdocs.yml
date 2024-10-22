@@ -1,8 +1,8 @@
-site_name: AI KB
-site_description: "AI KB"
+site_name: AI KS
+site_description: "Building AI powered knowledge stores"
 
-repo_url: https://github.com/Python-Test-Engineer/PyTest-Full-Stack
-repo_name: Python-Test-Engineer/PyTest-Full-Stack
+repo_url: https://ai-knowledge-stores.netlify.app/
+repo_name: RAG
 
 theme:
   icon:
@@ -37,11 +37,11 @@ extra:
 plugins:
   - search
   - mkdocstrings
-  - blog:
-      blog_dir: blog
-      blog_toc: true
-      archive: true
-      archive_name: All Articles
+  # - blog:
+  #     blog_dir: blog
+  #     blog_toc: true
+  #     archive: true
+  #     archive_name: All Articles
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
@@ -62,31 +62,29 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - "Motivation": "index.md"
+  - "Overview": "index.md"
+  - "Knowledge Stores":
+      - "Overview": "knowledge_stores/overview.md"
+      - "Human example": "rag/human_example.md"
   - "RAG":
-      - "Set Up": "pytest/index.md"
-      - "Customise": "pytest/pytest_full_stack_customise.md"
-      - "Tests": "pytest/pytest_tests.md"
-      - "Test Management": "pytest/pytest_test_management.md"
-      - "Docker": "pytest/pytest_docker.md"
-      - "Allure": "pytest/pytest_allure.md"
-      - "Cheat Sheet 1": "pytest/pytest_cheat_sheet.md"
-      - "Cheat Sheet 2": "pytest/pytest_cheat2.md"
-  - "About":
-      - "About": "asides/asides.md"
-      - "Pluggy": "asides/pluggy.md"
-      - "Mocking": "asides/mocking.md"
-      - "Decorators": "asides/decorators.md"
-  - "Toolbox":
-      - "About": "toolbox/toolbox_index.md"
-      - "Allure Windows ": "toolbox/allure_windows_setup.md"
-      - "Pydantic DTS": "toolbox/pydantic_dts.md"
-      - "Visual Regression": "toolbox/visual_regression.md"
-      - "YoYo PyTest": "toolbox/docker_postgres_yoyo_pytest.md"
-      - "Git Essentials": "toolbox/git_essentials.md"
-      - "Console prettying": "toolbox/rich_pyboxen.md"
-      - "Hatch PyPA": "toolbox/hatch.md"
-
+      - "Human example": "rag/human_example.md"
+      - "RAG": "rag/rag.md"
+      - "Graph RAG": "rag/graph_rag.md"
+  - "AI Agents":
+      - "What is an AI Agent?": "ai_agents/what_is_an_ai_agent.md"
+      - "Frameworks": "ai_agents/frameworks.md"
+  - "Architecture":
+      - "Overview": "architecture/overview.md"
+      - "Vector Store": "architecture/vector_store.md"
+      - "Controller": "architecture/controller.md"
+      - "Front end": "architecture/architecture.md"
+      - "Deployment": "architecture/deployment.md"
+  - "Evaluation":
+      - "Overview": "evaluation/overview.md"
+      - "Ragas": "evaluation/ragas.md"
+      - "Giskard": "evaluation/giskard.md"
+  - "Production":
+      - "Overview": "production/overview.md"
   - "About Craig":
       - "Services": "craig/services.md"
       - "CV": "craig/cv.md"
@@ -94,4 +92,4 @@ nav:
       - "Contact": "craig/contact.md"
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/Python-Test-Engineer"  target="_blank" rel="noopener">Craig West - pytest-cookbook.com</a>
+  &copy; 2024 <a href="https://ai-knowledge-stores.netlify.app/"  target="_blank" rel="noopener">Craig West - Building AI powered knowledge Stores</a>
