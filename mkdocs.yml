@@ -1,5 +1,5 @@
-site_name: AI KS
-site_description: "Building AI powered knowledge stores"
+site_name: AI Powered Knowledge Stores
+site_description: "Building AI Powered knowledge stores"
 
 repo_url: https://ai-knowledge-stores.netlify.app/
 repo_name: RAG
@@ -63,17 +63,16 @@ markdown_extensions:
 # Page tree
 nav:
   - "Overview": "index.md"
-  - "Knowledge Stores":
-      - "Overview": "knowledge_stores/overview.md"
+  - "Motivation": "motivation.md"
+  - "Retrieval":
       - "Human example": "rag/human_example.md"
-  - "RAG":
-      - "Human example": "rag/human_example.md"
+      - "Knowledge Stores": "rag/knowledge_stores.md"
       - "RAG": "rag/rag.md"
       - "Graph RAG": "rag/graph_rag.md"
   - "AI Agents":
       - "What is an AI Agent?": "ai_agents/what_is_an_ai_agent.md"
       - "Frameworks": "ai_agents/frameworks.md"
-  - "Architecture":
+  - "The Stack":
       - "Overview": "architecture/overview.md"
       - "Vector Store": "architecture/vector_store.md"
       - "Controller": "architecture/controller.md"
