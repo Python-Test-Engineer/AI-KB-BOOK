@@ -1,4 +1,4 @@
-# Building AI Powered Knowledge Stores 
+# Building AI Powered Knowledge Systems 
 
 *Under construction but content is in my head*
 

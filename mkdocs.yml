@@ -1,7 +1,7 @@
-site_name: AI Powered Knowledge Stores
-site_description: "Building AI Powered knowledge stores"
+site_name: AI Powered Knowledge Systems
+site_description: "Building AI Powered knowledge Systems"
 
-repo_url: https://ai-knowledge-stores.netlify.app/
+repo_url: https://ai-knowledge-systems.netlify.app/
 repo_name: RAG
 
 theme:
@@ -99,4 +99,4 @@ nav:
       - "Contact": "craig/contact.md"
 
 copyright: |
-  &copy; 2024 <a href="https://ai-powered-knowledge-stores.netlify.app/"  target="_blank" rel="noopener">Craig West - Building AI Powered Knowledge Stores</a>
+  &copy; 2024 <a href="https://ai-powered-knowledge-systems.netlify.app/"  target="_blank" rel="noopener">Craig West - Building AI Powered Knowledge Systems</a>
