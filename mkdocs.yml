@@ -78,12 +78,20 @@ nav:
       - "Controller": "architecture/controller.md"
       - "Front end": "architecture/architecture.md"
       - "Deployment": "architecture/deployment.md"
-  - "Evaluation":
+
+  - "Pipeline":
+      - "Gather": "pipeline/gather.md"
+      - "Ingest": "pipeline/ingest.md"
+      - "Pre-query": "pipeline/pre_query.md"
+      - "Query": "pipeline/query.md"
+      - "Generate": "pipeline/generate.md"
+      - "Cache and rate": "pipeline/cache_and_rate.md"
+      - "Evaluate": "pipeline/evaluate.md"
+      - "Refine": "pipeline/refine.md"
+  - "Performance":
       - "Overview": "evaluation/overview.md"
       - "Ragas": "evaluation/ragas.md"
       - "Giskard": "evaluation/giskard.md"
-  - "Production":
-      - "Overview": "production/overview.md"
   - "About Craig":
       - "Services": "craig/services.md"
       - "CV": "craig/cv.md"
