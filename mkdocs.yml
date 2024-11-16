@@ -62,7 +62,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - "Overview": "index.md"
+  - "The Pitch": "index.md"
   - "Motivation": "motivation.md"
   - "Retrieval":
       - "Human example": "rag/human_example.md"
@@ -70,28 +70,30 @@ nav:
       - "RAG": "rag/rag.md"
       - "Graph RAG": "rag/graph_rag.md"
   - "AI Agents":
-      - "What is an AI Agent?": "ai_agents/what_is_an_ai_agent.md"
-      - "Frameworks": "ai_agents/frameworks.md"
+    - "What is an AI Agent?": "ai_agents/what_is_an_ai_agent.md"
+    - "Frameworks": "ai_agents/frameworks.md"
+  - "Pipeline":
+      - "Gather": "pipeline/gather.md"
+      - "Ingest": "pipeline/ingest.md"
+      - "Pre-query": "pipeline/pre_query.md"
+      - "Query": "pipeline/query.md"
+      - "Rate with LLM": "pipeline/rate_with_llm.md"
+      - "Generate": "pipeline/generate.md"
+      - "User rate and cache": "pipeline/cache_and_rate.md"
+      - "Prof Evaluation": "pipeline/evaluate.md"
+      - "Refine": "pipeline/refine.md"
+
   - "The Stack":
       - "Overview": "architecture/overview.md"
       - "Vector Store": "architecture/vector_store.md"
       - "Controller": "architecture/controller.md"
       - "Front end": "architecture/architecture.md"
       - "Deployment": "architecture/deployment.md"
-
-  - "Pipeline":
-      - "Gather": "pipeline/gather.md"
-      - "Ingest": "pipeline/ingest.md"
-      - "Pre-query": "pipeline/pre_query.md"
-      - "Query": "pipeline/query.md"
-      - "Generate": "pipeline/generate.md"
-      - "Cache and rate": "pipeline/cache_and_rate.md"
-      - "Evaluate": "pipeline/evaluate.md"
-      - "Refine": "pipeline/refine.md"
-  - "Performance":
-      - "Overview": "evaluation/overview.md"
-      - "Ragas": "evaluation/ragas.md"
-      - "Giskard": "evaluation/giskard.md"
+# performance in Pipeline
+  # - "Performance":
+  #     - "Overview": "evaluation/overview.md"
+  #     - "Ragas": "evaluation/ragas.md"
+  #     - "Giskard": "evaluation/giskard.md"
   - "About Craig":
       - "Services": "craig/services.md"
       - "CV": "craig/cv.md"
