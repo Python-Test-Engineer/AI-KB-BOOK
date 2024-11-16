@@ -63,12 +63,11 @@ markdown_extensions:
 # Page tree
 nav:
   - "The Pitch": "index.md"
-  - "Motivation": "motivation.md"
-  - "Retrieval":
-      - "Human example": "rag/human_example.md"
-      - "Knowledge Stores": "rag/knowledge_stores.md"
-      - "RAG": "rag/rag.md"
-      - "Graph RAG": "rag/graph_rag.md"
+  - "RAG":
+    - "What is RAG?": "rag/what_is_rag.md"
+    - "Human example": "rag/human_example.md"
+    - "Knowledge Stores": "rag/knowledge_stores.md"
+    - "Graph RAG": "rag/graph_rag.md"
   - "AI Agents":
     - "What is an AI Agent?": "ai_agents/what_is_an_ai_agent.md"
     - "Frameworks": "ai_agents/frameworks.md"
@@ -80,15 +79,11 @@ nav:
       - "Rate with LLM": "pipeline/rate_with_llm.md"
       - "Generate": "pipeline/generate.md"
       - "User rate and cache": "pipeline/cache_and_rate.md"
-      - "Prof Evaluation": "pipeline/evaluate.md"
+      - "Prof Evaluation": "pipeline/prof_evaluate.md"
       - "Refine": "pipeline/refine.md"
 
-  - "The Stack":
-      - "Overview": "architecture/overview.md"
-      - "Vector Store": "architecture/vector_store.md"
-      - "Controller": "architecture/controller.md"
-      - "Front end": "architecture/architecture.md"
-      - "Deployment": "architecture/deployment.md"
+  - "The Stack": "architecture.stack.md"
+
 # performance in Pipeline
   # - "Performance":
   #     - "Overview": "evaluation/overview.md"
