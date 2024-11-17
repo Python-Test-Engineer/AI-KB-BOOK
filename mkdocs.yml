@@ -76,13 +76,16 @@ nav:
       - "Ingest": "pipeline/ingest.md"
       - "Pre-query": "pipeline/pre_query.md"
       - "Query": "pipeline/query.md"
-      - "Rate with LLM": "pipeline/rate_with_llm.md"
+      - "Grading": "pipeline/grade.md"
       - "Generate": "pipeline/generate.md"
       - "User rate and cache": "pipeline/cache_and_rate.md"
-      - "Prof Evaluation": "pipeline/prof_evaluate.md"
-      - "Refine": "pipeline/refine.md"
+
 
   - "The Stack": "architecture/stack.md"
+  - "Evaluation":
+      - "LLM as Judge": "evaluation/rate_with_llm.md"
+      - "Domain Expert": "evaluation/domain_expert.md"
+      - "Refine": "evaluation/refine.md"
 
   # performance in Pipeline
   # - "Performance":

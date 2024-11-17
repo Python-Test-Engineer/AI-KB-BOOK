@@ -6,8 +6,10 @@ We will record if they give it a thumbs up or down and they can also add thier o
 
 These are all saved in the database so that later when another user asks a question we can check if a similar one with a positive rating exists. This can be fouind very quickly and offered to the user with the option of requesting further information.
 
-In time a large dataset of question/answer pairs can be created and then used to fine tune a model to make better predictions.
+We can see if other users adding ratings to cached results given to them is effective. In this way we get a community rating of answers to questions.
 
-Further more, by storing the data in an atomic fashion, organisations can import and export datasets easily.
+When a cached response is offered to a user, they could see statistics of what others think of this answer.
 
-A human researcher may develop their own dataset/FAQs and these can be shared amongsts organisations.
+This is an established techincal feature of many article sites.
+
+A clever UI could make all this feedback data and additonal information clean and effective rather than cluttering up the page.
