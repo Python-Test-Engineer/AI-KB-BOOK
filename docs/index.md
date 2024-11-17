@@ -19,13 +19,48 @@ We represent it in our architecture as a brain and this serves us well as we can
 
 ### Vector Databases
 
+![vector space](./images/rag/vector-space.png)
+
+OpenAI has 1536 dimensions
+
 ### Semantic search
+
+Semantic search vectors are numerical representations of data and related contexts that are used to rank and deliver search results based on their relevance. 
+
+The closer two points in vector space are, the more similar they are.
+
+There are a few different methods such as cosine similarity, dot product, Euclidean distance etc.
 
 ### RAG
 
+RAG = Retrieval Augmented Generation
+
+RETRIEVAL:
+
+We retrieve the most useful information from a vector database and then use it to generate a response using the LLM.
+
+AUGEMENTED:
+
+We combine the retreived documents and the query and pass it to the LLM to generate a response.
+
+GENERATION:
+
+The LLM generates the final response.
+
+
 ### Prompt Engineering
 
-Create 'scene' for LLM...
+There is a difference between sending the documents and query to the LLM as is and a prompt template:
+
+"You are an expert in the field of medicine. Answer the following question: {question} based on the following documents: {documents}"
+
+If you are unsure about your answer, say "I don't know".
+
+Use a professional and formal language in your responses.
+
+Where possible, use references from the documents.
+
+I like to thing of it as giving an actor details about a scene or giving a detailed job description to an researcher.
 
 ### AI Agents
 
