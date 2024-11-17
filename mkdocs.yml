@@ -63,14 +63,14 @@ markdown_extensions:
 # Page tree
 nav:
   - "The Pitch": "index.md"
-  - "RAG":
-      - "What is RAG?": "rag/what_is_rag.md"
-      - "Human example": "rag/human_example.md"
-      - "Knowledge Stores": "rag/knowledge_stores.md"
-      - "Graph RAG": "rag/graph_rag.md"
-  - "AI Agents":
-      - "What is an AI Agent?": "ai_agents/what_is_an_ai_agent.md"
-      - "Frameworks": "ai_agents/frameworks.md"
+  # - "RAG":
+  #     - "What is RAG?": "rag/what_is_rag.md"
+  #     - "Human example": "rag/human_example.md"
+  #     - "Knowledge Stores": "rag/knowledge_stores.md"
+  #     - "Graph RAG": "rag/graph_rag.md"
+  # - "AI Agents":
+  #     - "What is an AI Agent?": "ai_agents/what_is_an_ai_agent.md"
+  #     - "Frameworks": "ai_agents/frameworks.md"
   - "Pipeline":
       - "Gather": "pipeline/gather.md"
       - "Ingest": "pipeline/ingest.md"
