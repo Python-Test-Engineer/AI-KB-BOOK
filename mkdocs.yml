@@ -62,7 +62,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - "The Pitch": "index.md"
+  - "Proposal": "index.md"
   # - "RAG":
   #     - "What is RAG?": "rag/what_is_rag.md"
   #     - "Human example": "rag/human_example.md"
