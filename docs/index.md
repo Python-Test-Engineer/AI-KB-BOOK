@@ -95,14 +95,147 @@ New academic papers for better techniques are continually being published.
 
 ## Proposed application
 
-### unstructured.io
+### unstructured.io 
 
+[unstructured.io](https://unstructured.io/) is a leader in parsing all types of files into strucutred data.
+
+If we think of our pdf as a molecule, then we can break it down into atoms containg the text, images and tables as well as metadata.
+
+This can then be entered into our DB with the apporpriate part vectorised for semantic search.
+
+```
+[
+    {
+        "type": "Title",
+        "element_id": "0405351ac64213c7b1e40e31aff7d21b",
+        "metadata": {
+            "filename": "Bank Good Credit Loan.pptx",
+            "file_directory": "tmpdocs",
+            "last_modified": "2023-11-02T15:16:14",
+            "filetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+            "category_depth": 1,
+            "languages": [
+                "eng"
+            ],
+            "page_number": 1
+        },
+        "text": "Bank Good Credit "
+    },
+    {
+        "type": "NarrativeText",
+        "element_id": "214987ebee9fd615365185fb3d692253",
+        "metadata": {
+            "filename": "Bank Good Credit Loan.pptx",
+            "file_directory": "tmpdocs",
+            "last_modified": "2023-11-02T15:16:14",
+            "filetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+            "parent_id": "0405351ac64213c7b1e40e31aff7d21b",
+            "category_depth": 0,
+            "languages": [
+                "eng"
+            ],
+            "page_number": 1
+        },
+        "text": "Accredited with IABAC™"
+    },
+    {
+        "type": "ListItem",
+        "element_id": "5eb6ec96e6a3493c1ae56747ae457b7f",
+        "metadata": {
+            "filename": "Bank Good Credit Loan.pptx",
+            "file_directory": "tmpdocs",
+            "last_modified": "2023-11-02T15:16:14",
+            "filetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+            "parent_id": "2dc308bd8d3a5c745dfacc3bdccd81db",
+            "category_depth": 1,
+            "languages": [
+                "eng"
+            ],
+            "page_number": 2
+        },
+        "text": "Data provided"
+    },
+    {
+        "type": "Table",
+        "element_id": "0f932c1c78cd59aef141af819dfdcf84",
+        "metadata": {
+            "filename": "currency.csv",
+            "file_directory": "tmpdocs",
+            "last_modified": "2023-11-02T15:17:41",
+            "filetype": "text/csv",
+            "languages": [
+                "eng"
+            ],
+            "text_as_html": "<table border=\"1\" class=\"dataframe\">\n  <tbody>\n    <tr>\n      <td>Code</td>\n      <td>Symbol</td>\n      <td>Name</td>\n    </tr>\n    td>\n      <td>Ft</td>\n           <td>ZK</td>\n      <td>Zambian kwacha</td>\n    </tr>\n  </tbody>\n</table>"
+        },
+        "text": "\n\n\nCode\nSymbol\nName\n\n\nAED\n\u062f.\u0625\nUnited Arab Emirates d\n\n\nAFN\n\u060b\nAfghan afghani\n\n\nALL\nL\nAlbanian lek\n\n\nAMD\nAMD\nArmenian dram\n\n\nANG\n\u0192\nNetherlands Antillean gu\n\n\nAOA\nKz\nAngolan kwanza\n\n\nARS\n$\nArgentine i rial\n\n\nZAR\nR\nSouth African rand\n\n\nZMW\nZK\nZambian kwacha\n\n\n"
+    },
+    {
+        "type": "Image",
+        "element_id": "37883f438c468b3027dd7918a958dacd",
+        "text": "15 - & \u2014 10g =} \u2014 & \u20146g N Potential (V) \u2014 2 & = Control 2 e 88 25 T T 0.0000001 0.00001 0.001 01 Current Density (A/cm2)",
+        "metadata": {
+            "image" "base64 value",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "page_number": 1,
+            "filename": "embedded-images-tables.pdf",
+            "data_source": {
+                "url": null,
+                "version": null,
+                "record_locator": {
+                    "path": "C:\\Users\\mrcra\\Desktop\\RAG\\pdf_input\\embedded-images-tables.pdf"
+                },
+                "date_created": "1727326976.0",
+                "date_modified": "1727326976.0",
+                "date_processed": "1729367235.6743865",
+                "permissions_data": [
+                    {
+                        "mode": 33206
+                    }
+                ],
+                "filesize_bytes": 109798
+            }
+        }
+    
+
+````
+
+
+
+The cost for single-modality is $10 for 10,000 pages and for multi-modal it is £10 for 1,000 pages.
+
+*A no-brainer...*
 
 ### Text processing
 
+In the case of text, we can embed the content for semantic search.
+
+It also means we can create articles by gathering relative text fragments and , of course, we can add tables and images.
+
 ### Table processing
 
+We get both text_html and text_plain as output.
+
 ### Image processing
+
+In the case of an image, we get the Base64 value of the image. 
+
+We don't need to reference a stored image but have it in the outputted element.
+
+This can then be processed with an LLM to get a text description of the image, in addition to the labels attached to the image.
+
+### Audio
+
+Not part of unstructured.io but speech to text APIs are available and well established. We can process the text in the usual way.
+
+### Video
+
+Not part of unstructured.io but YouTube has an API to get transcripts of videos which can then be processed as we would process any text.
+
+Videos are a series of images so there are ways to create descriptions of videos etc.
 
 ## Requirements
 
