@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../ingest/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../query/">
+        <link rel="next" href="../02_ingest/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Pre-query - AI Powered Knowledge Systems</title>
+        <title>Gather - AI Powered Knowledge Systems</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prequery" class="md-skip">
+        <a href="#gathering_docs" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pre-query
+              Gather
             
           </span>
         </div>
@@ -311,10 +311,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../gather/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -323,6 +332,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -335,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ingest/" class="md-nav__link">
+      <a href="../02_ingest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -353,76 +363,18 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Pre-query
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../03_improve_question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Pre-query
+    Improve question
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#multi_query" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multi Query
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hyde" class="md-nav__link">
-    <span class="md-ellipsis">
-      HyDE
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -435,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../query/" class="md-nav__link">
+      <a href="../04_retrieve_docs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -456,11 +408,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../grade/" class="md-nav__link">
+      <a href="../05_rank_and_filter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Grading
+    Ranking
   </span>
   
 
@@ -477,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generate/" class="md-nav__link">
+      <a href="../06_generate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cache_and_rate/" class="md-nav__link">
+      <a href="../07_user_rate_and_cache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -790,32 +742,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#multi_query" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multi Query
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hyde" class="md-nav__link">
-    <span class="md-ellipsis">
-      HyDE
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -829,13 +755,19 @@
                   
 
 
-<h1 id="prequery">PreQuery<a class="headerlink" href="#prequery" title="Permanent link">&para;</a></h1>
-<p>We can process the query using a pre-query to increase the quality of retrieval;</p>
-<h2 id="multi_query">Multi Query<a class="headerlink" href="#multi_query" title="Permanent link">&para;</a></h2>
-<p>We get the LLM to make N versions of the user query and then get all the unique documents for them.</p>
-<h2 id="hyde">HyDE<a class="headerlink" href="#hyde" title="Permanent link">&para;</a></h2>
-<p><img alt="HyDE" src="../../images/rag/hyde.png" /></p>
-<p>Hypothetical document embeddings is a technique that creates a theoretical document when responding to a query, as opposed to using the query and its computed vector to directly seek in the vector database.</p>
+<h1 id="gathering_docs">Gathering Docs<a class="headerlink" href="#gathering_docs" title="Permanent link">&para;</a></h1>
+<p>We need to create our own indexed library of documentrs so that we know what information we have.</p>
+<p>These will be collated for a specific medical domain.</p>
+<p>It would be helpful to have metadata about each document to help with filtering and correct retrieval.</p>
+<p>Data types can include:</p>
+<ul>
+<li>PDFs of articles.</li>
+<li>Tabular data within these articles.</li>
+<li>Images within these articles that have a text summary.</li>
+<li>Word, Powerpoint and Excel documents.</li>
+<li>Audio and video files to create transcripts to text as well video analysis of sequential images that are then summarised with text.</li>
+</ul>
+<p>MULTIMODAL</p>
 
 
 

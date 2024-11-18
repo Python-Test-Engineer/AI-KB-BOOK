@@ -1,4 +1,4 @@
-# PreQuery
+# Improve question
 
 We can process the query using a pre-query to increase the quality of retrieval;
 

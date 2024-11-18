@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../generate/">
+        <link rel="prev" href="../04_retrieve_docs/">
       
       
-        <link rel="next" href="../../architecture/stack/">
+        <link rel="next" href="../06_generate/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>User rate and cache - AI Powered Knowledge Systems</title>
+        <title>Ranking - AI Powered Knowledge Systems</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user_ratings" class="md-skip">
+        <a href="#ranking" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              User rate and cache
+              Ranking
             
           </span>
         </div>
@@ -314,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gather/" class="md-nav__link">
+      <a href="../01_gather/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -335,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ingest/" class="md-nav__link">
+      <a href="../02_ingest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -356,11 +356,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../pre_query/" class="md-nav__link">
+      <a href="../03_improve_question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Pre-query
+    Improve question
   </span>
   
 
@@ -377,53 +377,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../query/" class="md-nav__link">
+      <a href="../04_retrieve_docs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Query
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../grade/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Grading
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../generate/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Generate
   </span>
   
 
@@ -453,12 +411,54 @@
         
   
   <span class="md-ellipsis">
-    User rate and cache
+    Ranking
   </span>
   
 
       </a>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_generate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_user_rate_and_cache/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User rate and cache
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -755,14 +755,9 @@
                   
 
 
-<h1 id="user_ratings">User ratings<a class="headerlink" href="#user_ratings" title="Permanent link">&para;</a></h1>
-<p>Once a user gets a final response, the user will have the option to rate the response. </p>
-<p>We will record if they give it a thumbs up or down and they can also add thier own comments/additions to the response.</p>
-<p>These are all saved in the database so that later when another user asks a question we can check if a similar one with a positive rating exists. This can be fouind very quickly and offered to the user with the option of requesting further information.</p>
-<p>We can see if other users adding ratings to cached results given to them is effective. In this way we get a community rating of answers to questions.</p>
-<p>When a cached response is offered to a user, they could see statistics of what others think of this answer.</p>
-<p>This is an established techincal feature of many article sites.</p>
-<p>A clever UI could make all this feedback data and additonal information clean and effective rather than cluttering up the page.</p>
+<h1 id="ranking">Ranking<a class="headerlink" href="#ranking" title="Permanent link">&para;</a></h1>
+<p>We can use an AI Grading Agent to grade the quality of retrieved documents, check the response for hallucinations and other issues.</p>
+<p>This can be use at any stage in the pipeline.</p>
 
 
 

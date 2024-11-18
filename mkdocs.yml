@@ -72,13 +72,13 @@ nav:
   #     - "What is an AI Agent?": "ai_agents/what_is_an_ai_agent.md"
   #     - "Frameworks": "ai_agents/frameworks.md"
   - "Pipeline":
-      - "Gather": "pipeline/gather.md"
-      - "Ingest": "pipeline/ingest.md"
-      - "Pre-query": "pipeline/pre_query.md"
-      - "Query": "pipeline/query.md"
-      - "Grading": "pipeline/grade.md"
-      - "Generate": "pipeline/generate.md"
-      - "User rate and cache": "pipeline/cache_and_rate.md"
+      - "Gather": "pipeline/01_gather.md"
+      - "Ingest": "pipeline/02_ingest.md"
+      - "Improve question": "pipeline/03_improve_question.md"
+      - "Query": "pipeline/04_retrieve_docs.md"
+      - "Ranking": "pipeline/05_rank_and_filter.md"
+      - "Generate": "pipeline/06_generate.md"
+      - "User rate and cache": "pipeline/07_user_rate_and_cache.md"
 
 
   - "The Stack": "architecture/stack.md"

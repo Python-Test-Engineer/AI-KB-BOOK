@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../pre_query/">
+        <link rel="prev" href="../06_generate/">
       
       
-        <link rel="next" href="../grade/">
+        <link rel="next" href="../../architecture/stack/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Query - AI Powered Knowledge Systems</title>
+        <title>User rate and cache - AI Powered Knowledge Systems</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#query" class="md-skip">
+        <a href="#user_ratings" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Query
+              User rate and cache
             
           </span>
         </div>
@@ -314,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gather/" class="md-nav__link">
+      <a href="../01_gather/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -335,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ingest/" class="md-nav__link">
+      <a href="../02_ingest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -356,11 +356,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../pre_query/" class="md-nav__link">
+      <a href="../03_improve_question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Pre-query
+    Improve question
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_retrieve_docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Query
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_rank_and_filter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ranking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_generate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generate
   </span>
   
 
@@ -390,75 +453,12 @@
         
   
   <span class="md-ellipsis">
-    Query
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../grade/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Grading
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../generate/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Generate
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cache_and_rate/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
     User rate and cache
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -755,10 +755,14 @@
                   
 
 
-<h1 id="query">Query<a class="headerlink" href="#query" title="Permanent link">&para;</a></h1>
-<p>With our retrieved documents and the user question, we can now add them to one of Promtpt Templates to send to the LLM to generate a response.</p>
-<p>We will have a number of Prompt Templates and when the user finally rates the response, we will be able to record which template, as well as all the other strategy parameters, enabling us to refine our system.</p>
-<p>This is where PROMPT ENGINEERING comes into play.</p>
+<h1 id="user_ratings">User ratings<a class="headerlink" href="#user_ratings" title="Permanent link">&para;</a></h1>
+<p>Once a user gets a final response, the user will have the option to rate the response. </p>
+<p>We will record if they give it a thumbs up or down and they can also add thier own comments/additions to the response.</p>
+<p>These are all saved in the database so that later when another user asks a question we can check if a similar one with a positive rating exists. This can be fouind very quickly and offered to the user with the option of requesting further information.</p>
+<p>We can see if other users adding ratings to cached results given to them is effective. In this way we get a community rating of answers to questions.</p>
+<p>When a cached response is offered to a user, they could see statistics of what others think of this answer.</p>
+<p>This is an established techincal feature of many article sites.</p>
+<p>A clever UI could make all this feedback data and additonal information clean and effective rather than cluttering up the page.</p>
 
 
 

@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../01_gather/">
       
       
-        <link rel="next" href="../ingest/">
+        <link rel="next" href="../03_improve_question/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Gather - AI Powered Knowledge Systems</title>
+        <title>Ingest - AI Powered Knowledge Systems</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gathering_docs" class="md-skip">
+        <a href="#ingestion" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gather
+              Ingest
             
           </span>
         </div>
@@ -311,6 +311,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_gather/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gather
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -327,7 +348,7 @@
         
   
   <span class="md-ellipsis">
-    Gather
+    Ingest
   </span>
   
 
@@ -345,11 +366,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../ingest/" class="md-nav__link">
+      <a href="../03_improve_question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Ingest
+    Improve question
   </span>
   
 
@@ -366,28 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pre_query/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Pre-query
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../query/" class="md-nav__link">
+      <a href="../04_retrieve_docs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,11 +408,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../grade/" class="md-nav__link">
+      <a href="../05_rank_and_filter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Grading
+    Ranking
   </span>
   
 
@@ -429,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generate/" class="md-nav__link">
+      <a href="../06_generate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -450,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cache_and_rate/" class="md-nav__link">
+      <a href="../07_user_rate_and_cache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -755,19 +755,9 @@
                   
 
 
-<h1 id="gathering_docs">Gathering Docs<a class="headerlink" href="#gathering_docs" title="Permanent link">&para;</a></h1>
-<p>We need to create our own indexed library of documentrs so that we know what information we have.</p>
-<p>These will be collated for a specific medical domain.</p>
-<p>It would be helpful to have metadata about each document to help with filtering and correct retrieval.</p>
-<p>Data types can include:</p>
-<ul>
-<li>PDFs of articles.</li>
-<li>Tabular data within these articles.</li>
-<li>Images within these articles that have a text summary.</li>
-<li>Word, Powerpoint and Excel documents.</li>
-<li>Audio and video files to create transcripts to text as well video analysis of sequential images that are then summarised with text.</li>
-</ul>
-<p>MULTIMODAL</p>
+<h1 id="ingestion">Ingestion<a class="headerlink" href="#ingestion" title="Permanent link">&para;</a></h1>
+<p>Once we have our data that has been cleaned and formatted, we need to ingest it into our knowledge base. Ingestion is the process of taking data and converting it into a format that can be used by our knowledge base.</p>
+<p>This means creating vector embeddings for each chunk, (which is termed a Document and many Documents make a paper/pdf) and then indexing them into a vector database.</p>
 
 
 
