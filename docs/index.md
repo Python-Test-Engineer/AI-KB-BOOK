@@ -272,21 +272,43 @@ Using Langflow, we can create a workflow to process the documents. In essence, w
 
 Langflow has NODES (entities) and EDGES (connections between nodes). They can be 1:1 or conditional (if/else).
 
-IMAGE HERE
+IMAGE HERE!!!!!!!!!!
 
-When a user asks a question, we will first look in the DB if there is already an answer to a similar question. This is built up from the USER_RATE_FILTER strategy and initially will be empty.
+### GET ANSWER FROM CACHE
+When a user asks a question, we will first look in the DB if there is already an answer to a similar question. This is built up from the USER RATE FILTER strategy and initially will be empty.
+
+
+### DO SEMANTIC SEARCH
 
 If there is no answer, we will then run the Langflow workflow to generate an answer.
 
-We can do REFINE_QUESTION as a technique to get better answers. This will involve a number of different strategies outline in the SECTIONHERE.
+We can do REFINE_QUESTION as a technique to get better answers. This will involve a number of different strategies outline in the <SECTIONHERE>.
 
-Having a refined question or set of questions, we will then retrieve the best K results and combine with the question(s) to generate the final answer.
+Having a refined question or set of questions, we will then retrieve the best K results.
+
+### RANK & FILTER DOCS
+
+We can then apply strategies to rank the documents and filter out irrelevant ones.
+
+### GENERATE RESPONSE
+
+We send the context content and (refined) question(s) to the LLM to get the answer.
+
+### CHECK NO HALLUCINATION
 
 We will then do CHECK_NO_HALLUCINATIONS to check that the final answer is not hallucinated and then send the generated response to the user.
+We can use reflective RAG to see if we need to repeat the process.
 
-The user will then do USER_RATE and we will do filter and cache as appropriate.
+### USER RATE AND CACHE
+
+The user will then do USER_RATE where the user can give thumbs up/down or rate for accuracy, content, relevancy and clarity as well as adding their own comments and additions to the response.
+
+We will then cache (store) this in the DB for future use.
 
 Obviously, we can use a number of different strategies to generate the final answer.
+
+
+### GRAPH RAG
 
 One emerging technology is GRAPHRAG. Here, the standard database we use for keyword and semantic search is converted to a Graph Database so that NODES (entities) and EDGES (connections between nodes) can be formed not just within each article but between articles.
 
@@ -294,9 +316,15 @@ One emerging technology is GRAPHRAG. Here, the standard database we use for keyw
 
 ## Requirements
 
-Set of documents for a particular domain area or sub domain.
+### Data
+
+We will need a set of pdfs, Word, Powerpoint and Excel documents etc for a particular domain area to carry out evaluation of the app.
+
+### What to do?
 
 Determine what users will want to do, like summarising, collating, queries etc.
+
+### Benchmarking
 
 A number of benchmarking sets of questions that can be processed to get generated responses. These will be in a spreadsheet with metrics and overall rating for a domain expert to evaluate the app.
 
@@ -311,14 +339,6 @@ This is detailed in the architecture section.
 Postgres/Django on render.com.
 
 The front end is decoupled from backend so that we can change the technology of the front end as we see fit. It is the embellishment part but having a range of functionality for the user is important as they must be able to select whaht they want to do with options.
-
-### Data
-
-We will need a set of pdfs, Word, Powerpoint and Excel documents etc for a particular domain area to carry out evaluation of the app.
-
-### What do we want?
-
-Given that we have all these atoms of data and metadata, what do researchers want the app to do?
 
 ## Timescale
 
