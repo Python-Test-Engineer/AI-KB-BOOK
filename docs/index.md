@@ -4,10 +4,16 @@
 
 To create a Software as a Service, (SASS), product that enable the medical community to harness the power of AI to improve extraction and presentation of relevent, accurate and complete information from the vast amount of data available in the medical literature.
 
+## How
+
+We break up the molecules of an article into atoms, getting their content and metadata, and then use LLMs and semantic search to answer questions form a user.
+
+In our database we can then reconstuct any article through various strategies of gathering and joining atoms.
 
 ## Current concepts
 
-What are the current concepts/buzz words in this space?
+
+Lets take a look at some of the current buzz words in this space so that we understand what we are doing.
 
 ### LLM
 
@@ -64,9 +70,30 @@ I like to thing of it as giving an actor details about a scene or giving a detai
 
 ### AI Agents
 
-An artificial intelligence (AI) agent is a software program that can interact with its environment, collect data, and use the data to perform self-determined tasks to meet predetermined goals. Humans set goals, but an AI agent independently chooses the best actions it needs to perform to achieve those goals. For example, consider a contact center AI agent that wants to resolves customer queries. The agent will automatically ask the customer different questions, look up information in internal documents, and respond with a solution. Based on the customer responses, it determines if it can resolve the query itself or pass it on to a human.
+LLMs are well established in the field of AI Agents. We create a profile of an agent with instructions and then it can carry out that task, calling upon tools we may have given it.
 
-Whilst we may have our overall flowchart, the AI Agent will determine the path to take. It is like having the roll of a dice determine the next step. We have a predetermined set of tasks, but the agent will determine the best way to complete those tasks.
+An example:
+
+=============================================================
+
+You are an expert medical reviewer. Grade the following content for accuracy and completeness. If you are unable to do this then say "I don't know".
+
+If the article is acceptible, return "Acceptable", otherwise return "Not Acceptable".
+
+You have the following tools available:
+
+- Check Accuracy Tool
+- Check Completeness Tool
+- Check Relevancy Tool
+
+Here is the content to be graded:
+
+[article]
+
+=============================================================
+
+
+Whilst we may have our overall flowchart, the AI Agent will determine the path to take based on the output the LLM generates.
 
 ## Naive Rag
 
@@ -94,6 +121,8 @@ New academic papers for better techniques are continually being published.
 *"This is the worst it will ever be..."* - someone said.
 
 ## Proposed application
+
+First and most importantly we will look at how we ingest articles into our DB.
 
 ### unstructured.io 
 
@@ -175,7 +204,7 @@ This can then be entered into our DB with the apporpriate part vectorised for se
         "element_id": "37883f438c468b3027dd7918a958dacd",
         "text": "15 - & \u2014 10g =} \u2014 & \u20146g N Potential (V) \u2014 2 & = Control 2 e 88 25 T T 0.0000001 0.00001 0.001 01 Current Density (A/cm2)",
         "metadata": {
-            "image" "base64 value",
+            "image": "base64 value",
             "filetype": "application/pdf",
             "languages": [
                 "eng"
@@ -200,8 +229,8 @@ This can then be entered into our DB with the apporpriate part vectorised for se
             }
         }
     
-
-````
+]
+```
 
 
 
@@ -237,7 +266,71 @@ Not part of unstructured.io but YouTube has an API to get transcripts of videos 
 
 Videos are a series of images so there are ways to create descriptions of videos etc.
 
+## Workflow
+
+Using Langflow, we can create a workflow to process the documents. In essence, we first create our own flowchart for human processing and then convert this to code.
+
+Langflow has NODES (entities) and EDGES (connections between nodes). They can be 1:1 or conditional (if/else).
+
+IMAGE HERE!!!!!!!!!!
+
+### GET ANSWER FROM CACHE
+When a user asks a question, we will first look in the DB if there is already an answer to a similar question. This is built up from the USER RATE FILTER strategy and initially will be empty.
+
+
+### DO SEMANTIC SEARCH
+
+If there is no answer, we will then run the Langflow workflow to generate an answer.
+
+We can do REFINE_QUESTION as a technique to get better answers. This will involve a number of different strategies outline in the <SECTIONHERE>.
+
+Having a refined question or set of questions, we will then retrieve the best K results.
+
+### RANK & FILTER DOCS
+
+We can then apply strategies to rank the documents and filter out irrelevant ones.
+
+### GENERATE RESPONSE
+
+We send the context content and (refined) question(s) to the LLM to get the answer.
+
+### CHECK NO HALLUCINATION
+
+We will then do CHECK_NO_HALLUCINATIONS to check that the final answer is not hallucinated and then send the generated response to the user.
+We can use reflective RAG to see if we need to repeat the process.
+
+### USER RATE AND CACHE
+
+The user will then do USER_RATE where the user can give thumbs up/down or rate for accuracy, content, relevancy and clarity as well as adding their own comments and additions to the response.
+
+We will then cache (store) this in the DB for future use.
+
+Obviously, we can use a number of different strategies to generate the final answer.
+
+
+### GRAPH RAG
+
+One emerging technology is GRAPHRAG. Here, the standard database we use for keyword and semantic search is converted to a Graph Database so that NODES (entities) and EDGES (connections between nodes) can be formed not just within each article but between articles.
+
+*What if we could run a query that gathers all connected and relevant atoms to create a super-article?* (Instead of creating this 'manually' through imperative code).
+
 ## Requirements
+
+### Data
+
+We will need a set of pdfs, Word, Powerpoint and Excel documents etc for a particular domain area to carry out evaluation of the app.
+
+### What to do?
+
+Determine what users will want to do, like summarising, collating, queries etc.
+
+### Benchmarking
+
+A number of benchmarking sets of questions that can be processed to get generated responses. These will be in a spreadsheet with metrics and overall rating for a domain expert to evaluate the app.
+
+![Excel](./images/rag/evaluation_excel.png)
+
+<p style="color:cyan;font-weight:bold;font-style:italic;letter-spacing:3px">THIS IS THE ULTIMATE EVALUATION OF THE APP</p>
 
 ### Hosting
 
@@ -245,15 +338,7 @@ This is detailed in the architecture section.
 
 Postgres/Django on render.com.
 
-The front end is decoupled from backend so that we can change the technology of the front end as we see fit.
-
-### Data
-
-We will need a set of pdfs, Word, Powerpoint and Excel documents etc for a particular domain area to carry out evaluation of the app.
-
-### What do we want?
-
-Given that we have all these atoms of data and metadata, what do researchers want the app to do?
+The front end is decoupled from backend so that we can change the technology of the front end as we see fit. It is the embellishment part but having a range of functionality for the user is important as they must be able to select whaht they want to do with options.
 
 ## Timescale
 
@@ -263,7 +348,9 @@ By the end of June, a SaSSO will be ready to go live or the project will come to
 
 ## Costs
 
-Base costs of a DB,hosting and OpenAI is around $320/month which I am happy to pay.
+Base costs of a DB,hosting and OpenAI is around $20/month which I am happy to pay.
+
+The cost for unstructured.io for say 50 articles = 500 pages is a nominal $5.
 
 When useage grows, the costs will increase. These will need to be borne by the project.
 
