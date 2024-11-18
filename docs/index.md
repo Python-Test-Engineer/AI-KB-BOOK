@@ -93,4 +93,49 @@ New academic papers for better techniques are continually being published.
 
 *"This is the worst it will ever be..."* - someone said.
 
+## Proposed application
+
+### unstructured.io
+
+
+### Text processing
+
+### Table processing
+
+### Image processing
+
+## Requirements
+
+### Hosting
+
+This is detailed in the architecture section.
+
+Postgres/Django on render.com.
+
+The front end is decoupled from backend so that we can change the technology of the front end as we see fit.
+
+### Data
+
+We will need a set of pdfs, Word, Powerpoint and Excel documents etc for a particular domain area to carry out evaluation of the app.
+
+### What do we want?
+
+Given that we have all these atoms of data and metadata, what do researchers want the app to do?
+
+## Timescale
+
+Most of the core is done soe March-June will be final develpoment, testing and evaluation. 
+
+By the end of June, a SaSSO will be ready to go live or the project will come to an end.
+
+## Costs
+
+Base costs of a DB,hosting and OpenAI is around $320/month which I am happy to pay.
+
+When useage grows, the costs will increase. These will need to be borne by the project.
+
+For customers, they can use their own OpenAI account. Charges for DB and website traffic will be borne by the project/customer/ 
+
+This mechanism is yet to be determined.
+
 <br>

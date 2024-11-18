@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#stack" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -395,7 +400,7 @@
         
   
   <span class="md-ellipsis">
-    Ranking
+    Rank and filter
   </span>
   
 
@@ -437,7 +442,7 @@
         
   
   <span class="md-ellipsis">
-    User rate and cache
+    User rates and cache
   </span>
   
 
@@ -467,6 +472,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    The Stack
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -477,6 +495,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#front_end" class="md-nav__link">
+    <span class="md-ellipsis">
+      Front End
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -730,6 +794,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#front_end" class="md-nav__link">
+    <span class="md-ellipsis">
+      Front End
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -744,9 +845,18 @@
                   
 
 
-  <h1>The Stack</h1>
-
-
+<h1 id="stack">Stack<a class="headerlink" href="#stack" title="Permanent link">&para;</a></h1>
+<h2 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h2>
+<p>We will use Postgres as our database. It is a leading open source relational database management system.</p>
+<p>Using the PgVector extension we can use the vector similarity to find similar documents.</p>
+<h2 id="front_end">Front End<a class="headerlink" href="#front_end" title="Permanent link">&para;</a></h2>
+<p>The system is designed to be uncoupled to the application enabling the technology used to be readily changed.</p>
+<p>I am opting for a Django front end as this is a leading Python Content Management System and I am already familiar with the framework.</p>
+<p>For client-side reactivity, HTMX and Alpine.js are used. These are more than sufficinet to recreate the React/Vue experience.</p>
+<h2 id="hosting">Hosting<a class="headerlink" href="#hosting" title="Permanent link">&para;</a></h2>
+<p>Ulimately, Microsoft Azure will be used to host the application and the database. It also has many Cognitive Search tools that we might include.</p>
+<p>For now, we will use <code>render.com</code> to host the application. It is an industrial level hosting platform.</p>
+<p>The database can be readily migrated to Azure.</p>
 
 
 
