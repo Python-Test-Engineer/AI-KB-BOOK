@@ -95,6 +95,8 @@ New academic papers for better techniques are continually being published.
 
 ## Proposed application
 
+First and most importantly we will look at how we ingest articles into our DB.
+
 ### unstructured.io 
 
 [unstructured.io](https://unstructured.io/) is a leader in parsing all types of files into strucutred data.
@@ -175,7 +177,7 @@ This can then be entered into our DB with the apporpriate part vectorised for se
         "element_id": "37883f438c468b3027dd7918a958dacd",
         "text": "15 - & \u2014 10g =} \u2014 & \u20146g N Potential (V) \u2014 2 & = Control 2 e 88 25 T T 0.0000001 0.00001 0.001 01 Current Density (A/cm2)",
         "metadata": {
-            "image" "base64 value",
+            "image": "base64 value",
             "filetype": "application/pdf",
             "languages": [
                 "eng"
@@ -200,8 +202,8 @@ This can then be entered into our DB with the apporpriate part vectorised for se
             }
         }
     
-
-````
+]
+```
 
 
 
@@ -237,7 +239,43 @@ Not part of unstructured.io but YouTube has an API to get transcripts of videos 
 
 Videos are a series of images so there are ways to create descriptions of videos etc.
 
+## Workflow
+
+Using Langflow, we can create a workflow to process the documents. In essence, we first create our own flowchart for human processing and then convert this to code.
+
+Langflow has NODES (entities) and EDGES (connections between nodes). They can be 1:1 or conditional (if/else).
+
+IMAGE HERE
+
+When a user asks a question, we will first look in the DB if there is already an answer to a similar question. This is built up from the USER_RATE_FILTER strategy and initially will be empty.
+
+If there is no answer, we will then run the Langflow workflow to generate an answer.
+
+We can do REFINE_QUESTION as a technique to get better answers. This will involve a number of different strategies outline in the SECTIONHERE.
+
+Having a refined question or set of questions, we will then retrieve the best K results and combine with the question(s) to generate the final answer.
+
+We will then do CHECK_NO_HALLUCINATIONS to check that the final answer is not hallucinated and then send the generated response to the user.
+
+The user will then do USER_RATE and we will do filter and cache as appropriate.
+
+Obviously, we can use a number of different strategies to generate the final answer.
+
+One emerging technology is GRAPHRAG. Here, the standard database we use for keyword and semantic search is converted to a Graph Database so that NODES (entities) and EDGES (connections between nodes) can be formed not just within each article but between articles.
+
+*What if we could run a query that gathers all connected and relevant atoms to create a super-article?* (Instead of creating this 'manually' through imperative code).
+
 ## Requirements
+
+Set of documents for a particular domain area or sub domain.
+
+Determine what users will want to do, like summarising, collating, queries etc.
+
+A number of benchmarking sets of questions that can be processed to get generated responses. These will be in a spreadsheet with metrics and overall rating for a domain expert to evaluate the app.
+
+![Excel](./images/rag/evaluation_excel.png)
+
+<p style="color:cyan;font-weight:bold;font-style:italic;letter-spacing:3px">THIS IS THE ULTIMATE EVALUATION OF THE APP</p>
 
 ### Hosting
 
@@ -245,7 +283,7 @@ This is detailed in the architecture section.
 
 Postgres/Django on render.com.
 
-The front end is decoupled from backend so that we can change the technology of the front end as we see fit.
+The front end is decoupled from backend so that we can change the technology of the front end as we see fit. It is the embellishment part but having a range of functionality for the user is important as they must be able to select whaht they want to do with options.
 
 ### Data
 
@@ -263,7 +301,9 @@ By the end of June, a SaSSO will be ready to go live or the project will come to
 
 ## Costs
 
-Base costs of a DB,hosting and OpenAI is around $320/month which I am happy to pay.
+Base costs of a DB,hosting and OpenAI is around $20/month which I am happy to pay.
+
+The cost for unstructured.io for say 50 articles = 500 pages is a nominal $5.
 
 When useage grows, the costs will increase. These will need to be borne by the project.
 
