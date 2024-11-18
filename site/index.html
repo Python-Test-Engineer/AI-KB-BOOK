@@ -310,6 +310,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how" class="md-nav__link">
+    <span class="md-ellipsis">
+      How
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#current_concepts" class="md-nav__link">
     <span class="md-ellipsis">
       Current concepts
@@ -1018,6 +1027,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how" class="md-nav__link">
+    <span class="md-ellipsis">
+      How
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#current_concepts" class="md-nav__link">
     <span class="md-ellipsis">
       Current concepts
@@ -1260,8 +1278,11 @@
 <h1 id="ai_powered_knowledge_systems">AI Powered Knowledge Systems<a class="headerlink" href="#ai_powered_knowledge_systems" title="Permanent link">&para;</a></h1>
 <h2 id="mission">Mission<a class="headerlink" href="#mission" title="Permanent link">&para;</a></h2>
 <p>To create a Software as a Service, (SASS), product that enable the medical community to harness the power of AI to improve extraction and presentation of relevent, accurate and complete information from the vast amount of data available in the medical literature.</p>
+<h2 id="how">How<a class="headerlink" href="#how" title="Permanent link">&para;</a></h2>
+<p>We break up the molecules of an article into atoms, getting their content and metadata, and then use LLMs and semantic search to answer questions form a user.</p>
+<p>In our database we can then reconstuct any article through various strategies of gathering and joining atoms.</p>
 <h2 id="current_concepts">Current concepts<a class="headerlink" href="#current_concepts" title="Permanent link">&para;</a></h2>
-<p>What are the current concepts/buzz words in this space?</p>
+<p>Lets take a look at some of the current buzz words in this space so that we understand what we are doing.</p>
 <h3 id="llm">LLM<a class="headerlink" href="#llm" title="Permanent link">&para;</a></h3>
 <p>A large language model (LLM) is a type of artificial intelligence (AI) program that can recognize and generate text, among other tasks. LLMs are trained on huge sets of data — hence the name "large." LLMs are built on machine learning: specifically, a type of neural network called a transformer model.</p>
 <p>We represent it in our architecture as a brain and this serves us well as we can also think what would a human do at this stage?</p>
@@ -1289,8 +1310,21 @@
 <p>Where possible, use references from the documents.</p>
 <p>I like to thing of it as giving an actor details about a scene or giving a detailed job description to an researcher.</p>
 <h3 id="ai_agents">AI Agents<a class="headerlink" href="#ai_agents" title="Permanent link">&para;</a></h3>
-<p>An artificial intelligence (AI) agent is a software program that can interact with its environment, collect data, and use the data to perform self-determined tasks to meet predetermined goals. Humans set goals, but an AI agent independently chooses the best actions it needs to perform to achieve those goals. For example, consider a contact center AI agent that wants to resolves customer queries. The agent will automatically ask the customer different questions, look up information in internal documents, and respond with a solution. Based on the customer responses, it determines if it can resolve the query itself or pass it on to a human.</p>
-<p>Whilst we may have our overall flowchart, the AI Agent will determine the path to take. It is like having the roll of a dice determine the next step. We have a predetermined set of tasks, but the agent will determine the best way to complete those tasks.</p>
+<p>LLMs are well established in the field of AI Agents. We create a profile of an agent with instructions and then it can carry out that task, calling upon tools we may have given it.</p>
+<p>An example:</p>
+<p>=============================================================</p>
+<p>You are an expert medical reviewer. Grade the following content for accuracy and completeness. If you are unable to do this then say "I don't know".</p>
+<p>If the article is acceptible, return "Acceptable", otherwise return "Not Acceptable".</p>
+<p>You have the following tools available:</p>
+<ul>
+<li>Check Accuracy Tool</li>
+<li>Check Completeness Tool</li>
+<li>Check Relevancy Tool</li>
+</ul>
+<p>Here is the content to be graded:</p>
+<p>[article]</p>
+<p>=============================================================</p>
+<p>Whilst we may have our overall flowchart, the AI Agent will determine the path to take based on the output the LLM generates.</p>
 <h2 id="naive_rag">Naive Rag<a class="headerlink" href="#naive_rag" title="Permanent link">&para;</a></h2>
 <p>Two years ago when we first looked at RAG, the strategy was to take a document and split into chuncks of say 500 characters and have an overlap of 100 charactes with the next chunk to maintain some context.</p>
 <p>This works very well for single modality text documents where this Niave Rag is in effect a search tool, taking an unstructured query and using LLMs and semantic search to find relevant chunks and answer the question.</p>

@@ -4,10 +4,16 @@
 
 To create a Software as a Service, (SASS), product that enable the medical community to harness the power of AI to improve extraction and presentation of relevent, accurate and complete information from the vast amount of data available in the medical literature.
 
+## How
+
+We break up the molecules of an article into atoms, getting their content and metadata, and then use LLMs and semantic search to answer questions form a user.
+
+In our database we can then reconstuct any article through various strategies of gathering and joining atoms.
 
 ## Current concepts
 
-What are the current concepts/buzz words in this space?
+
+Lets take a look at some of the current buzz words in this space so that we understand what we are doing.
 
 ### LLM
 
@@ -64,9 +70,30 @@ I like to thing of it as giving an actor details about a scene or giving a detai
 
 ### AI Agents
 
-An artificial intelligence (AI) agent is a software program that can interact with its environment, collect data, and use the data to perform self-determined tasks to meet predetermined goals. Humans set goals, but an AI agent independently chooses the best actions it needs to perform to achieve those goals. For example, consider a contact center AI agent that wants to resolves customer queries. The agent will automatically ask the customer different questions, look up information in internal documents, and respond with a solution. Based on the customer responses, it determines if it can resolve the query itself or pass it on to a human.
+LLMs are well established in the field of AI Agents. We create a profile of an agent with instructions and then it can carry out that task, calling upon tools we may have given it.
 
-Whilst we may have our overall flowchart, the AI Agent will determine the path to take. It is like having the roll of a dice determine the next step. We have a predetermined set of tasks, but the agent will determine the best way to complete those tasks.
+An example:
+
+=============================================================
+
+You are an expert medical reviewer. Grade the following content for accuracy and completeness. If you are unable to do this then say "I don't know".
+
+If the article is acceptible, return "Acceptable", otherwise return "Not Acceptable".
+
+You have the following tools available:
+
+- Check Accuracy Tool
+- Check Completeness Tool
+- Check Relevancy Tool
+
+Here is the content to be graded:
+
+[article]
+
+=============================================================
+
+
+Whilst we may have our overall flowchart, the AI Agent will determine the path to take based on the output the LLM generates.
 
 ## Naive Rag
 
