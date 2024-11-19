@@ -82,6 +82,7 @@ nav:
 
   - "The Stack": "architecture/stack.md"
   - "Evaluation":
+      - "Overview": "evaluation/overview.md"
       - "LLM as Judge": "evaluation/rate_with_llm.md"
       - "Domain Expert": "evaluation/domain_expert.md"
       - "Refine": "evaluation/refine.md"
