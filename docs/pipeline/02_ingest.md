@@ -2,7 +2,11 @@
 
 Once we have our data that has been cleaned and formatted, we need to ingest it into our knowledge base. Ingestion is the process of taking data and converting it into a format that can be used by our knowledge base.
 
-This means creating vector embeddings for each chunk, (which is termed a Document and many Documents make a paper/pdf) and then indexing them into a vector database.
+This means creating vector embeddings for each chunk, (which is termed a document and many documents make a paper/pdf) and then indexing them into a vector database.
+
+- https://www.youtube.com/watch?v=ymON0qXbbdw
+- scispacy 
+- medcat
 
 ## Prepocessing 
 
@@ -27,3 +31,9 @@ Given a document (chunk), we can use the LLM to create questions that can be use
 This is a technique of RAG but rather than do this with each search, we can as a background task do this with each document.
 
 We then have the options to add this strategy if needed.
+
+### Postgresql FTS
+
+We can use Postgresql FTS to create a full text search engine for our knowledge base.
+
+https://bigmachine.io/2022/06/12/creating-a-full-text-search-engine-in-postgresql-2022/

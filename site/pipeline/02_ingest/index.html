@@ -22,7 +22,7 @@
     
     
       
-        <title>Ingest - AI Powered Knowledge Systems</title>
+        <title>Ingest and NLP - AI Powered Knowledge Systems</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ingest
+              Ingest and NLP
             
           </span>
         </div>
@@ -344,15 +344,96 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ingest and NLP
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Ingest
+    Ingest and NLP
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prepocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepocessing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prepocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#named_entity_recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Named Entity Recognition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summarization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create_questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgresql_fts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postgresql FTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -525,6 +606,27 @@
             Evaluation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluation/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -742,6 +844,65 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prepocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepocessing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prepocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#named_entity_recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Named Entity Recognition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summarization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create_questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgresql_fts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postgresql FTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -757,7 +918,27 @@
 
 <h1 id="ingestion">Ingestion<a class="headerlink" href="#ingestion" title="Permanent link">&para;</a></h1>
 <p>Once we have our data that has been cleaned and formatted, we need to ingest it into our knowledge base. Ingestion is the process of taking data and converting it into a format that can be used by our knowledge base.</p>
-<p>This means creating vector embeddings for each chunk, (which is termed a Document and many Documents make a paper/pdf) and then indexing them into a vector database.</p>
+<p>This means creating vector embeddings for each chunk, (which is termed a document and many documents make a paper/pdf) and then indexing them into a vector database.</p>
+<ul>
+<li>https://www.youtube.com/watch?v=ymON0qXbbdw</li>
+<li>scispacy </li>
+<li>medcat</li>
+</ul>
+<h2 id="prepocessing">Prepocessing<a class="headerlink" href="#prepocessing" title="Permanent link">&para;</a></h2>
+<p>We can use ML NLP to create additional metadata for each document.</p>
+<p>This will enable Hybrid Search where we use both semantic and traditional lexical searches.</p>
+<h3 id="named_entity_recognition">Named Entity Recognition<a class="headerlink" href="#named_entity_recognition" title="Permanent link">&para;</a></h3>
+<p>We can use MedNER to extract named entities from each document. This can help with traditional searches/filtering as well as enable GraphDB creation.</p>
+<h3 id="summarization">Summarization<a class="headerlink" href="#summarization" title="Permanent link">&para;</a></h3>
+<p>For documents with a certain amount of content, we can do NLP Summarization, vecorizing the summary and indexing it into the vector database.</p>
+<p>This will also enable article summarization for users and we can sue the LLM to combine summarising the document as a whole with the summary of all the section summaries.</p>
+<h3 id="create_questions">Create questions<a class="headerlink" href="#create_questions" title="Permanent link">&para;</a></h3>
+<p>Given a document (chunk), we can use the LLM to create questions that can be used to improve retrieval. "What questions does this document answer?"</p>
+<p>This is a technique of RAG but rather than do this with each search, we can as a background task do this with each document.</p>
+<p>We then have the options to add this strategy if needed.</p>
+<h3 id="postgresql_fts">Postgresql FTS<a class="headerlink" href="#postgresql_fts" title="Permanent link">&para;</a></h3>
+<p>We can use Postgresql FTS to create a full text search engine for our knowledge base.</p>
+<p>https://bigmachine.io/2022/06/12/creating-a-full-text-search-engine-in-postgresql-2022/</p>
 
 
 

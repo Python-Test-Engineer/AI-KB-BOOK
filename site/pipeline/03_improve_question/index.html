@@ -339,7 +339,7 @@
         
   
   <span class="md-ellipsis">
-    Ingest
+    Ingest and NLP
   </span>
   
 
@@ -573,6 +573,27 @@
             Evaluation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluation/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -830,9 +851,11 @@
 
 
 <h1 id="improve_question">Improve question<a class="headerlink" href="#improve_question" title="Permanent link">&para;</a></h1>
-<p>We can process the query using a pre-query to increase the quality of retrieval;</p>
+<p>We can process the query using a pre-query to increase the quality of retrieval.</p>
+<p>As in human life, better questions lead to better answers.</p>
 <h2 id="multi_query">Multi Query<a class="headerlink" href="#multi_query" title="Permanent link">&para;</a></h2>
 <p>We get the LLM to make N versions of the user query and then get all the unique documents for them.</p>
+<p>If we have done some of the preprocessing mentioned previously in the "Ingest and NLP" phase, we can then have a better hit rate as we will have many variations of the user query compared to the many documents in the knowledge base that have had preprocessing applied to them.</p>
 <h2 id="hyde">HyDE<a class="headerlink" href="#hyde" title="Permanent link">&para;</a></h2>
 <p><img alt="HyDE" src="../../images/rag/hyde.png" /></p>
 <p>Hypothetical document embeddings is a technique that creates a theoretical document when responding to a query, as opposed to using the query and its computed vector to directly seek in the vector database.</p>
