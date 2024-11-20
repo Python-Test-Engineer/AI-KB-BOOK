@@ -36,4 +36,8 @@ We then have the options to add this strategy if needed.
 
 We can use Postgresql FTS to create a full text search engine for our knowledge base.
 
+This more than just `LIKE 'word*` and for many searches that involve terms much better than semantic search where semantic search may fail.
+
+This is called Hybrid Search.
+
 https://bigmachine.io/2022/06/12/creating-a-full-text-search-engine-in-postgresql-2022/
