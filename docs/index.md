@@ -267,7 +267,7 @@ Videos are a series of images so there are ways to create descriptions of videos
 
 ## Workflow
 
-### Flowchart
+### FLOWCHART
 
 ![strategy](./images/rag/flowchart.png)
 
