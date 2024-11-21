@@ -73,7 +73,7 @@ nav:
   #     - "Frameworks": "ai_agents/frameworks.md"
   - "Pipeline":
       - "Gather": "pipeline/01_gather.md"
-      - "Ingest": "pipeline/02_ingest.md"
+      - "Ingest and NLP": "pipeline/02_ingest.md"
       - "Improve question": "pipeline/03_improve_question.md"
       - "Query": "pipeline/04_retrieve_docs.md"
       - "Rank and filter": "pipeline/05_rank_and_filter.md"

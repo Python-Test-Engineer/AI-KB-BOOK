@@ -22,6 +22,7 @@ Faithfulness metric measures the factual consistency of the generated answer aga
 
 The generated answer is regarded as faithful if all the claims made in the answer can be inferred from the given context. To calculate this, a set of claims from the generated answer is first identified. Then each of these claims is cross-checked with the given context to determine if it can be inferred from the context. 
 
+
 ## Other evaluations
 
 There are many libraries for evaluating the perfromance of our app, like Giskard and Huggingface.
