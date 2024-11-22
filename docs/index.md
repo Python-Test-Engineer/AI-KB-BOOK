@@ -238,6 +238,15 @@ The cost for single-modality is $10 for 10,000 pages and for multi-modal it is Â
 
 *A no-brainer...*
 
+
+Vision Language model using whole PDF and convert query into VLM vector is very effective.
+
+Unstructured.io has a bunch of LLMs that can process any type of data and probbably does this under the hood.
+
+- Probablistic Search -User Feedback Part
+- Vector Search Model - LLM 
+- Bindary serach - Traditional Postgres
+
 ### Text processing
 
 In the case of text, we can embed the content for semantic search.
