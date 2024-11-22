@@ -12,7 +12,6 @@ In our database we can then reconstuct any article through various strategies of
 
 ## Current concepts
 
-
 Lets take a look at some of the current buzz words in this space so that we understand what we are doing.
 
 ### LLM
@@ -276,6 +275,10 @@ Not part of unstructured.io but YouTube has an API to get transcripts of videos 
 Videos are a series of images so there are ways to create descriptions of videos etc.
 
 ## Workflow
+
+### FLOWCHART
+
+![strategy](./images/rag/flowchart.png)
 
 Using Langflow, we can create a workflow to process the documents. In essence, we first create our own flowchart for human processing and then convert this to code.
 
