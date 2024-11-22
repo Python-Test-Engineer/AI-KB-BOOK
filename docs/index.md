@@ -10,9 +10,22 @@ We break up the molecules of an article into atoms, getting their content and me
 
 In our database we can then reconstuct any article through various strategies of gathering and joining atoms.
 
+We have 4 ways of performing queries
+
+1. Traditioal binary search of SQL. This is incredibly powerful for filtering out data not relevant to the query, like search by year, topic, author etc. We can tokenize and perform Named Entity Recognition with MedSpacy to create tags for each atom.
+
+2. Probablistic search based on what users have 'voted' for.
+
+3. Vector search based on semantic similarity using LLMs.
+
+4. Graph based serach using relationships between entities.
+
+Results can be displayed from one or more of these searches and the user can tick which ones are required.
+
+
 ## Current concepts
 
-Lets take a look at some of the current buzz words in this space so that we understand what we are doing.
+Let's take a look at some of the current buzz words in this space so that we understand what we are doing.
 
 ### LLM
 
@@ -55,7 +68,9 @@ The LLM generates the final response.
 
 ### Prompt Engineering
 
-There is a difference between sending the documents and query to the LLM as is and a prompt template:
+Now the preferred term is flow engineering.
+
+There is a difference between sending the documents and query to the LLM as is and with a prompt template:
 
 "You are an expert in the field of medicine. Answer the following question: {question} based on the following documents: {documents}"
 
@@ -93,6 +108,14 @@ Here is the content to be graded:
 
 
 Whilst we may have our overall flowchart, the AI Agent will determine the path to take based on the output the LLM generates.
+
+Langflow is a framework for building AI Agents and workflows. 
+
+We can see from the snippet of code how LangGraph simplifies the process.    
+
+![langgraph-example](./images/rag/example-code-langgraph.png)
+
+In essence, we can convert our flowchart into code using Langflow.
 
 ## Naive Rag
 

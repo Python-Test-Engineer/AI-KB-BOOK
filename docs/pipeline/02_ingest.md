@@ -14,6 +14,10 @@ We can use ML NLP to create additional metadata for each document.
 
 This will enable Hybrid Search where we use both semantic and traditional lexical searches.
 
+## Tokenization
+
+We can convert the document to tokens that form a set of tags to help with filtering queries.
+
 ### Named Entity Recognition
 
 We can use MedNER to extract named entities from each document. This can help with traditional searches/filtering as well as enable GraphDB creation.
