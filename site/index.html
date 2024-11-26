@@ -338,15 +338,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vector_databases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vector Databases
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#semantic_search" class="md-nav__link">
     <span class="md-ellipsis">
       Semantic search
@@ -1163,15 +1154,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vector_databases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vector Databases
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#semantic_search" class="md-nav__link">
     <span class="md-ellipsis">
       Semantic search
@@ -1475,19 +1457,37 @@
 <p>To create a Software as a Service, (SASS), product that enable the medical community to harness the power of AI to improve extraction and presentation of relevent, accurate and complete information from the vast amount of data available in the medical literature.</p>
 <h2 id="how">How<a class="headerlink" href="#how" title="Permanent link">&para;</a></h2>
 <p>We break up the molecules of an article into atoms, getting their content and metadata, and then use LLMs and semantic search to answer questions form a user.</p>
+<p>If the atoms contain tabular data, we will have both the text and HTML content so we can use an LLM to get information about it.</p>
+<p>If it has an image, we can use an LLM to get information about it as well.</p>
+<p>It is multi-modal covering a great range of file types like Word, Powerpoint and we can also process audio and video.</p>
 <p>In our database we can then reconstuct any article through various strategies of gathering and joining atoms.</p>
+<p>We have 4 ways of performing queries</p>
+<ol>
+<li>
+<p>Traditioal binary search of SQL. This is incredibly powerful for filtering out data not relevant to the query, like search by year, topic, author etc. We can tokenize and perform Named Entity Recognition with MedSpacy to create tags for each atom.</p>
+</li>
+<li>
+<p>Vector search based on semantic similarity using LLMs.</p>
+</li>
+<li>
+<p>Graph based serach using relationships between entities. This is an emerging technology for RAG, (Retreival Augmented Generation which will be explained later).</p>
+</li>
+<li>
+<p>Crowd sourced answers - when a user runs a query and gets a result, we can ask the user to rate it and add their own comments. There are a number of features to this which will be discussed later. This will also provide a dataset for further ML options.</p>
+</li>
+</ol>
+<p>With this atomic version of data, we can carry out summarisation, queries etc. and also build reports that aggregate information from many sources.</p>
 <h2 id="current_concepts">Current concepts<a class="headerlink" href="#current_concepts" title="Permanent link">&para;</a></h2>
-<p>Lets take a look at some of the current buzz words in this space so that we understand what we are doing.</p>
+<p>Let's take a look at some of the current buzz words in this space so that we understand what we are doing.</p>
 <h3 id="llm">LLM<a class="headerlink" href="#llm" title="Permanent link">&para;</a></h3>
 <p>A large language model (LLM) is a type of artificial intelligence (AI) program that can recognize and generate text, among other tasks. LLMs are trained on huge sets of data — hence the name "large." LLMs are built on machine learning: specifically, a type of neural network called a transformer model.</p>
 <p>We represent it in our architecture as a brain and this serves us well as we can also think what would a human do at this stage?</p>
 <p><img alt="brain" src="images/rag/brain.png" /></p>
-<h3 id="vector_databases">Vector Databases<a class="headerlink" href="#vector_databases" title="Permanent link">&para;</a></h3>
-<p><img alt="vector space" src="images/rag/vector-space.png" /></p>
-<p>OpenAI has 1536 dimensions</p>
 <h3 id="semantic_search">Semantic search<a class="headerlink" href="#semantic_search" title="Permanent link">&para;</a></h3>
 <p>Semantic search vectors are numerical representations of data and related contexts that are used to rank and deliver search results based on their relevance. </p>
 <p>The closer two points in vector space are, the more similar they are.</p>
+<p><img alt="vector space" src="images/rag/vector-space.png" /></p>
+<p>OpenAI has 1536 dimensions...</p>
 <p>There are a few different methods such as cosine similarity, dot product, Euclidean distance etc.</p>
 <h3 id="rag">RAG<a class="headerlink" href="#rag" title="Permanent link">&para;</a></h3>
 <p>RAG = Retrieval Augmented Generation</p>
@@ -1498,11 +1498,14 @@
 <p>GENERATION:</p>
 <p>The LLM generates the final response.</p>
 <h3 id="prompt_engineering">Prompt Engineering<a class="headerlink" href="#prompt_engineering" title="Permanent link">&para;</a></h3>
-<p>There is a difference between sending the documents and query to the LLM as is and a prompt template:</p>
+<p>Now the preferred term is <em>flow engineering</em>.</p>
+<p>There is a difference between sending the documents and query to the LLM on their own compared to using a prompt template:</p>
+<p>==================================================================</p>
 <p>"You are an expert in the field of medicine. Answer the following question: {question} based on the following documents: {documents}"</p>
 <p>If you are unsure about your answer, say "I don't know".</p>
 <p>Use a professional and formal language in your responses.</p>
 <p>Where possible, use references from the documents.</p>
+<p>==================================================================</p>
 <p>I like to thing of it as giving an actor details about a scene or giving a detailed job description to an researcher.</p>
 <h3 id="ai_agents">AI Agents<a class="headerlink" href="#ai_agents" title="Permanent link">&para;</a></h3>
 <p>LLMs are well established in the field of AI Agents. We create a profile of an agent with instructions and then it can carry out that task, calling upon tools we may have given it.</p>
@@ -1520,6 +1523,10 @@
 <p>[article]</p>
 <p>=============================================================</p>
 <p>Whilst we may have our overall flowchart, the AI Agent will determine the path to take based on the output the LLM generates.</p>
+<p>Langflow is a framework for building AI Agents and workflows. </p>
+<p>We can see from the snippet of code how LangGraph simplifies the process.    </p>
+<p><img alt="langgraph-example" src="images/rag/example-code-langgraph.png" /></p>
+<p>In essence, we can convert our flowchart into code using Langflow.</p>
 <h2 id="naive_rag">Naive Rag<a class="headerlink" href="#naive_rag" title="Permanent link">&para;</a></h2>
 <p>Two years ago when we first looked at RAG, the strategy was to take a document and split into chuncks of say 500 characters and have an overlap of 100 charactes with the next chunk to maintain some context.</p>
 <p>This works very well for single modality text documents where this Niave Rag is in effect a search tool, taking an unstructured query and using LLMs and semantic search to find relevant chunks and answer the question.</p>

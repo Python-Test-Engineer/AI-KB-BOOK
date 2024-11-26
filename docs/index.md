@@ -8,19 +8,25 @@ To create a Software as a Service, (SASS), product that enable the medical commu
 
 We break up the molecules of an article into atoms, getting their content and metadata, and then use LLMs and semantic search to answer questions form a user.
 
+If the atoms contain tabular data, we will have both the text and HTML content so we can use an LLM to get information about it.
+
+If it has an image, we can use an LLM to get information about it as well.
+
+It is multi-modal covering a great range of file types like Word, Powerpoint and we can also process audio and video.
+
 In our database we can then reconstuct any article through various strategies of gathering and joining atoms.
 
 We have 4 ways of performing queries
 
 1. Traditioal binary search of SQL. This is incredibly powerful for filtering out data not relevant to the query, like search by year, topic, author etc. We can tokenize and perform Named Entity Recognition with MedSpacy to create tags for each atom.
 
-2. Probablistic search based on what users have 'voted' for.
+2. Vector search based on semantic similarity using LLMs.
 
-3. Vector search based on semantic similarity using LLMs.
+3. Graph based serach using relationships between entities. This is an emerging technology for RAG, (Retreival Augmented Generation which will be explained later).
 
-4. Graph based serach using relationships between entities.
+4. Crowd sourced answers - when a user runs a query and gets a result, we can ask the user to rate it and add their own comments. There are a number of features to this which will be discussed later. This will also provide a dataset for further ML options.
 
-Results can be displayed from one or more of these searches and the user can tick which ones are required.
+With this atomic version of data, we can carry out summarisation, queries etc. and also build reports that aggregate information from many sources.
 
 
 ## Current concepts
@@ -35,17 +41,15 @@ We represent it in our architecture as a brain and this serves us well as we can
 
 ![brain](./images/rag/brain.png)
 
-### Vector Databases
-
-![vector space](./images/rag/vector-space.png)
-
-OpenAI has 1536 dimensions
-
 ### Semantic search
 
 Semantic search vectors are numerical representations of data and related contexts that are used to rank and deliver search results based on their relevance. 
 
 The closer two points in vector space are, the more similar they are.
+
+![vector space](./images/rag/vector-space.png)
+
+OpenAI has 1536 dimensions...
 
 There are a few different methods such as cosine similarity, dot product, Euclidean distance etc.
 
@@ -65,12 +69,13 @@ GENERATION:
 
 The LLM generates the final response.
 
-
 ### Prompt Engineering
 
-Now the preferred term is flow engineering.
+Now the preferred term is *flow engineering*.
 
-There is a difference between sending the documents and query to the LLM as is and with a prompt template:
+There is a difference between sending the documents and query to the LLM on their own compared to using a prompt template:
+
+==================================================================
 
 "You are an expert in the field of medicine. Answer the following question: {question} based on the following documents: {documents}"
 
@@ -79,6 +84,8 @@ If you are unsure about your answer, say "I don't know".
 Use a professional and formal language in your responses.
 
 Where possible, use references from the documents.
+
+==================================================================
 
 I like to thing of it as giving an actor details about a scene or giving a detailed job description to an researcher.
 
