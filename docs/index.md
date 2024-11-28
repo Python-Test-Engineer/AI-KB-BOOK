@@ -336,7 +336,7 @@ We can then apply strategies to rank the documents and filter out irrelevant one
 
 We send the context content and (refined) question(s) to the LLM to get the answer.
 
-### CHECK NO HALLUCINATION
+### CHECK NO HALLUCINATIONS
 
 We will then do CHECK_NO_HALLUCINATIONS to check that the final answer is not hallucinated and then send the generated response to the user.
 We can use reflective RAG to see if we need to repeat the process.
@@ -365,6 +365,8 @@ We will need a set of pdfs, Word, Powerpoint and Excel documents etc for a parti
 ### What to do?
 
 Determine what users will want to do, like summarising, collating, queries etc.
+
+What would a human researcher want and what would they do to get their final response?
 
 ### Benchmarking
 
