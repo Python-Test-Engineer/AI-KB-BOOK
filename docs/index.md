@@ -402,11 +402,9 @@ By the end of June, a SaSSO will be ready to go live or the project will come to
 
 ## Costs
 
-Base costs of a DB,hosting and OpenAI is around $20/month which I am happy to pay.
-
 The cost for unstructured.io for say 50 articles = 500 pages is a nominal $5.
 
-When useage grows, the costs will increase. These will need to be borne by the project.
+When useage grows, the costs will increase. These will need to be borne by the project or users.
 
 For customers, they can use their own OpenAI account. Charges for DB and website traffic will be borne by the project/customer/ 
 
