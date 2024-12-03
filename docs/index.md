@@ -61,6 +61,8 @@ There are a few different methods such as cosine similarity, dot product, Euclid
 
 ### RAG
 
+![nvidia-rag](./images/rag/nvidia-rag.png)
+
 RAG = Retrieval Augmented Generation
 
 RETRIEVAL:
