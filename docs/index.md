@@ -4,7 +4,13 @@
 
 To create a Software as a Service, (SASS), product that enable the medical community to harness the power of AI to improve extraction and presentation of relevent, accurate and complete information from the vast amount of data available in the medical literature.
 
+## Key points
+
+![flow](./images/rag/elevator-pitch.png)
+
 ## How
+
+![flow](./images/rag/elevator-flowchart.png)
 
 We break up the molecules of an article into atoms, getting their content and metadata, and then use LLMs and semantic search to answer questions form a user.
 
@@ -18,7 +24,7 @@ In our database we can then reconstuct any article through various strategies of
 
 We have 4 ways of performing queries
 
-1. Traditioal binary search of SQL. This is incredibly powerful for filtering out data not relevant to the query, like search by year, topic, author etc. We can tokenize and perform Named Entity Recognition with MedSpacy to create tags for each atom.
+1. Traditional binary search of SQL. This is incredibly powerful for filtering out data not relevant to the query, like search by year, topic, author etc. We can tokenize and perform Named Entity Recognition with MedSpacy to create tags for each atom.
 
 2. Vector search based on semantic similarity using LLMs.
 
@@ -314,7 +320,9 @@ Using Langflow, we can create a workflow to process the documents. In essence, w
 
 Langflow has NODES (entities) and EDGES (connections between nodes). They can be 1:1 or conditional (if/else).
 
-IMAGE HERE!!!!!!!!!!
+![strategy](./images/rag/agentic-rag.png)
+
+![strategy](./images/rag/langgraph-mermaid.png)
 
 ### GET ANSWER FROM CACHE
 When a user asks a question, we will first look in the DB if there is already an answer to a similar question. This is built up from the USER RATE FILTER strategy and initially will be empty.

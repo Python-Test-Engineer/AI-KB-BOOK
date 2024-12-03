@@ -310,6 +310,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#key_points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key points
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how" class="md-nav__link">
     <span class="md-ellipsis">
       How
@@ -1126,6 +1135,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#key_points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key points
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how" class="md-nav__link">
     <span class="md-ellipsis">
       How
@@ -1455,7 +1473,10 @@
 <h1 id="ai_powered_knowledge_systems">AI Powered Knowledge Systems<a class="headerlink" href="#ai_powered_knowledge_systems" title="Permanent link">&para;</a></h1>
 <h2 id="mission">Mission<a class="headerlink" href="#mission" title="Permanent link">&para;</a></h2>
 <p>To create a Software as a Service, (SASS), product that enable the medical community to harness the power of AI to improve extraction and presentation of relevent, accurate and complete information from the vast amount of data available in the medical literature.</p>
+<h2 id="key_points">Key points<a class="headerlink" href="#key_points" title="Permanent link">&para;</a></h2>
+<p><img alt="flow" src="images/rag/elevator-pitch.png" /></p>
 <h2 id="how">How<a class="headerlink" href="#how" title="Permanent link">&para;</a></h2>
+<p><img alt="flow" src="images/rag/elevator-flowchart.png" /></p>
 <p>We break up the molecules of an article into atoms, getting their content and metadata, and then use LLMs and semantic search to answer questions form a user.</p>
 <p>If the atoms contain tabular data, we will have both the text and HTML content so we can use an LLM to get information about it.</p>
 <p>If it has an image, we can use an LLM to get information about it as well.</p>
@@ -1464,7 +1485,7 @@
 <p>We have 4 ways of performing queries</p>
 <ol>
 <li>
-<p>Traditioal binary search of SQL. This is incredibly powerful for filtering out data not relevant to the query, like search by year, topic, author etc. We can tokenize and perform Named Entity Recognition with MedSpacy to create tags for each atom.</p>
+<p>Traditional binary search of SQL. This is incredibly powerful for filtering out data not relevant to the query, like search by year, topic, author etc. We can tokenize and perform Named Entity Recognition with MedSpacy to create tags for each atom.</p>
 </li>
 <li>
 <p>Vector search based on semantic similarity using LLMs.</p>
@@ -1676,7 +1697,8 @@
 <p><img alt="strategy" src="images/rag/flowchart.png" /></p>
 <p>Using Langflow, we can create a workflow to process the documents. In essence, we first create our own flowchart for human processing and then convert this to code.</p>
 <p>Langflow has NODES (entities) and EDGES (connections between nodes). They can be 1:1 or conditional (if/else).</p>
-<p>IMAGE HERE!!!!!!!!!!</p>
+<p><img alt="strategy" src="images/rag/agentic-rag.png" /></p>
+<p><img alt="strategy" src="images/rag/langgraph-mermaid.png" /></p>
 <h3 id="get_answer_from_cache">GET ANSWER FROM CACHE<a class="headerlink" href="#get_answer_from_cache" title="Permanent link">&para;</a></h3>
 <p>When a user asks a question, we will first look in the DB if there is already an answer to a similar question. This is built up from the USER RATE FILTER strategy and initially will be empty.</p>
 <h3 id="do_semantic_search">DO SEMANTIC SEARCH<a class="headerlink" href="#do_semantic_search" title="Permanent link">&para;</a></h3>
