@@ -21,7 +21,7 @@ I use GitHub to host a copy of my CV.
 
 A list of talks and workshops I have given: 
 
-- PyCon Ireland 2024 - 2 hr workshop 'Getting started with PyTest'
+- PyCon Ireland 2024 - 2 hr workshop 'Getting started with PyTest' - November 2024
 
 - TALK: Offline and instant websites, aka Progressive Web Apps - AsyncJS, Brighton, September 2021.
 
