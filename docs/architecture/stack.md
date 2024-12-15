@@ -2,9 +2,7 @@
 
 ## Database
 
-We will use Postgres as our database. It is a leading open source relational database management system.
-
-Using the PgVector extension we can use the vector similarity to find similar documents.
+We will use PostgreML as our database.
 
 ## Front End
 
