@@ -76,8 +76,8 @@ nav:
   - "Concepts":
       - "Agents": "concepts/agents.md"
       - "Graph DB": "concepts/graph_db.md"
-      - "Model Fine Tuning": "concepts/fine_tuningt.md"
-      - "Semantic Search": "concepts/semantic_search.md"  
+      - "Model Fine Tuning": "concepts/fine_tuning.md"
+      - "Semantic Search": "concepts/semantic_search.md"
 
   - "Architecture": "architecture/stack.md"
   - "Evaluation":
@@ -85,7 +85,7 @@ nav:
       - "LLM as Judge": "evaluation/rate_with_llm.md"
       - "Domain Expert": "evaluation/domain_expert.md"
       - "Refine": "evaluation/refine.md"
-#
+  #
   # performance in Pipeline
   # - "Performance":
   #     - "Overview": "evaluation/overview.md"
