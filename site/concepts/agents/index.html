@@ -532,6 +532,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Agents
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -541,6 +552,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#180_degrees" class="md-nav__link">
+    <span class="md-ellipsis">
+      180 degrees
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="180 degrees">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autonomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating_an_endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating an endpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -575,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fine_tuningt.md" class="md-nav__link">
+      <a href="../fine_tuning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -909,6 +990,65 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#180_degrees" class="md-nav__link">
+    <span class="md-ellipsis">
+      180 degrees
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="180 degrees">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autonomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating_an_endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating an endpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -923,7 +1063,80 @@
 
 
 <h1 id="agents">Agents<a class="headerlink" href="#agents" title="Permanent link">&para;</a></h1>
-<p>An agent is a machine that is able to interact with the world and take actions based on observations and rewards.</p>
+<p>AI Agents is software that has a conversation with an LLM.</p>
+<h2 id="180_degrees">180 degrees<a class="headerlink" href="#180_degrees" title="Permanent link">&para;</a></h2>
+<p>There are two concepts that seem to turn coding upside down. Like turning a computer mouse 180 degrees, there is no more complexity involved, still just up, down, left and right but done in the opposite way to usual.</p>
+<h3 id="autonomy">Autonomy<a class="headerlink" href="#autonomy" title="Permanent link">&para;</a></h3>
+<p>Autonomous AI Agents are able to determnine a next step based on the LLM which can then be used by the application layer to move on to the next step. It can seem tricky to see if we are coding imperatively or whether we have turned over direction to the AI Agent.</p>
+<h3 id="creating_an_endpoint">Creating an endpoint<a class="headerlink" href="#creating_an_endpoint" title="Permanent link">&para;</a></h3>
+<p>Prompt or Flow Engineering is where we add additional instruction to the query for the LLM to follow.</p>
+<p>In many ways it is like pseudo-code where we spec out what we want the endpoint API to do along with the data we send:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>REACT_SYSTEM_PROMPT = &quot;&quot;&quot;
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>You operate by running a loop with the following steps: Thought, Action, Observation.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>You are provided with function signatures within &lt;tools&gt;&lt;/tools&gt; XML tags.
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>You may call one or more functions to assist with the user query. Don&#39; make assumptions about what values to plug
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>into functions. Pay special attention to the properties &#39;types&#39;. You should use those types as in a Python dict.
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>For each function call return a json object with function name and arguments within &lt;tool_call&gt;&lt;/tool_call&gt; XML tags as follows:
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>&lt;tool_call&gt;
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>{&quot;name&quot;: &lt;function-name&gt;,&quot;arguments&quot;: &lt;args-dict&gt;, &quot;id&quot;: &lt;monotonically-increasing-id&gt;}
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>&lt;/tool_call&gt;
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Here are the available tools / actions:
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>&lt;tools&gt;
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>%s
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>&lt;/tools&gt;
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>Example session:
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>&lt;question&gt;What&#39;s the current temperature in Madrid?&lt;/question&gt;
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>&lt;thought&gt;I need to get the current weather in Madrid&lt;/thought&gt;
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>&lt;tool_call&gt;{&quot;name&quot;: &quot;get_current_weather&quot;,&quot;arguments&quot;: {&quot;location&quot;: &quot;Madrid&quot;, &quot;unit&quot;: &quot;celsius&quot;}, &quot;id&quot;: 0}&lt;/tool_call&gt;
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>You will be called again with this:
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>&lt;observation&gt;{0: {&quot;temperature&quot;: 25, &quot;unit&quot;: &quot;celsius&quot;}}&lt;/observation&gt;
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>You then output:
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>&lt;response&gt;The current temperature in Madrid is 25 degrees Celsius&lt;/response&gt;
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>Additional constraints:
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>- If the user asks you something unrelated to any of the tools above, answer freely enclosing your answer with &lt;response&gt;&lt;/response&gt; tags.
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>&quot;&quot;&quot;
+</span></code></pre></div>
+<p>We can pass in data for the query to the LLM as a prompt template.</p>
+<p>These two concepts, Autonomy and Prompt Engineering, are counter intuitive based on how we have been coding.</p>
+<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
+<p>AI Agents can also have tools, functions, bound to them so that the LLM can select the most appropriate tool based on the response.</p>
+<p>The function and arguments are then executed and added back into the prompt.</p>
+<p>A canonical example is doing a web search for additional data. If we need the weather for a location as part of the query then we need to get the weather first. A tool that gets the weather from a Weather API can then be used.</p>
+<p>The code is run on our box not the LLMs.</p>
+<p>OpenAI shows this in the following image:</p>
+<p><img alt="AI Agents" src="../../images/agents/where-tools-are-executed.png" /></p>
+<h2 id="patterns">Patterns<a class="headerlink" href="#patterns" title="Permanent link">&para;</a></h2>
+<p>There are many patterns but 4 main ones are;</p>
+<ol>
+<li>
+<p>Reflection</p>
+</li>
+<li>
+<p>Tool Calling</p>
+</li>
+<li>
+<p>Planning</p>
+</li>
+<li>
+<p>Multi Agent</p>
+</li>
+</ol>
+<p>The last one, Multi Agent, is a pattern where Agents can connect with each other and various hierarchies can be built.</p>
+<p>Having a Supervisor Agent that manages agents and crews can be useful for large scale projects.</p>
+<p>It is worth noting that Agents do not have to have an LLM and can be coded in the traditonal way. These softwared designs are well established over decades.</p>
+<p><br></p>
 
 
 
