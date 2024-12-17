@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../../architecture/stack/">
+        <link rel="prev" href="../../pipeline/07_user_rate_and_cache/">
       
       
-        <link rel="next" href="../rate_with_llm/">
+        <link rel="next" href="../agents/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Overview - AI Powered Knowledge Systems</title>
+        <title>Vector DBs - AI Powered Knowledge Systems</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#evaluation_overview" class="md-skip">
+        <a href="#vector_databases" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Vector DBs
             
           </span>
         </div>
@@ -463,17 +463,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -487,7 +489,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Concepts
@@ -498,10 +500,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../concepts/vector_databases/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Vector DBs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -510,6 +532,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sematic_search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sematic search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector_databases_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Databases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -522,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/agents/" class="md-nav__link">
+      <a href="../agents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/graph_db/" class="md-nav__link">
+      <a href="../graph_db/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -564,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/fine_tuning/" class="md-nav__link">
+      <a href="../fine_tuning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/semantic_search/" class="md-nav__link">
+      <a href="../semantic_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,19 +690,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -656,7 +714,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Evaluation
@@ -667,30 +725,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../evaluation/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,86 +737,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ragas_metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ragas metrics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ragas metrics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#context_precision" class="md-nav__link">
-    <span class="md-ellipsis">
-      Context Precision
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#context_recall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Context Recall
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#faithfulness" class="md-nav__link">
-    <span class="md-ellipsis">
-      Faithfulness
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other_evaluations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other evaluations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#domain_expert_evaluation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Domain Expert Evaluation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -791,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rate_with_llm/" class="md-nav__link">
+      <a href="../../evaluation/rate_with_llm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../domain_expert/" class="md-nav__link">
+      <a href="../../evaluation/domain_expert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../refine/" class="md-nav__link">
+      <a href="../../evaluation/refine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,60 +965,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ragas_metrics" class="md-nav__link">
+  <a href="#sematic_search" class="md-nav__link">
     <span class="md-ellipsis">
-      Ragas metrics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ragas metrics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#context_precision" class="md-nav__link">
-    <span class="md-ellipsis">
-      Context Precision
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#context_recall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Context Recall
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#faithfulness" class="md-nav__link">
-    <span class="md-ellipsis">
-      Faithfulness
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other_evaluations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other evaluations
+      Sematic search
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#domain_expert_evaluation" class="md-nav__link">
+  <a href="#vector_databases_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Domain Expert Evaluation
+      Vector Databases
     </span>
   </a>
   
@@ -1081,26 +997,19 @@
                   
 
 
-<h1 id="evaluation_overview">Evaluation Overview<a class="headerlink" href="#evaluation_overview" title="Permanent link">&para;</a></h1>
-<p>There are a number of ways we can evaluate the performance of the app. </p>
-<p>These use traditonal Natural Language Processing (NLP) and Machine Learning (ML) techniques.</p>
-<p>The main library we use, and this is more for the developers as we are developing different strategies, is <a href="https://docs.ragas.io/en/stable/">RAGAS</a>.</p>
-<h2 id="ragas_metrics">Ragas metrics<a class="headerlink" href="#ragas_metrics" title="Permanent link">&para;</a></h2>
-<h3 id="context_precision">Context Precision<a class="headerlink" href="#context_precision" title="Permanent link">&para;</a></h3>
-<p>This is a metric that measures the proportion of relevant chunks in the retrieved_contexts. It is calculated as the mean of the precision@k for each chunk in the context. Precision@k is the ratio of the number of relevant chunks at rank k to the total number of chunks at rank k.</p>
-<h3 id="context_recall">Context Recall<a class="headerlink" href="#context_recall" title="Permanent link">&para;</a></h3>
-<p>Context Recall measures how many of the relevant documents (or pieces of information) were successfully retrieved. It focuses on not missing important results. Higher recall means fewer relevant documents were left out. In short, recall is about not missing anything important. Since it is about not missing anything, calculating context recall always requires a reference to compare against.</p>
-<h3 id="faithfulness">Faithfulness<a class="headerlink" href="#faithfulness" title="Permanent link">&para;</a></h3>
-<p>Faithfulness metric measures the factual consistency of the generated answer against the given context. It is calculated from answer and retrieved context. The answer is scaled to (0,1) range. Higher the better.</p>
-<p>The generated answer is regarded as faithful if all the claims made in the answer can be inferred from the given context. To calculate this, a set of claims from the generated answer is first identified. Then each of these claims is cross-checked with the given context to determine if it can be inferred from the context. </p>
-<h2 id="other_evaluations">Other evaluations<a class="headerlink" href="#other_evaluations" title="Permanent link">&para;</a></h2>
-<p>There are many libraries for evaluating the perfromance of our app, like Giskard and Huggingface.</p>
-<h2 id="domain_expert_evaluation">Domain Expert Evaluation<a class="headerlink" href="#domain_expert_evaluation" title="Permanent link">&para;</a></h2>
-<p>Ultimately, the real test is that of the domain expert.</p>
-<p>Here, we have a set of questions and answers and we want to evaluate the performance of the app.</p>
-<p>We can create a set of 'ground truths', questions and their correct answer set up by domain experts.</p>
-<p>We can then have our app generate answers and context to these questions for a domain expert to assess, not just the accuracy but also whether the context returned was relevant:</p>
-<p><img alt="domain expert" src="../../images/rag/evaluation_excel.png" /></p>
+<h1 id="vector_databases">Vector Databases<a class="headerlink" href="#vector_databases" title="Permanent link">&para;</a></h1>
+<p><img alt="vector space" src="../../images/rag/vector-space.png" /></p>
+<h2 id="sematic_search">Sematic search<a class="headerlink" href="#sematic_search" title="Permanent link">&para;</a></h2>
+<p>Unlike keyword search, semantic search uses the context of the document to rank and deliver search results based on their relevance.</p>
+<p>The closer two points in vector space are, the more similar they are.</p>
+<p>Cat, Feline, Kitten will be closer together that Dog, Canine, Pup.</p>
+<p>The image above shows a vector space where the closer two points are, the more similar they are. This is in 3 dimensions but in reality the number of dimensions can range from 386 to 1536.</p>
+<p>There are a few different methods such as cosine similarity, dot product, Euclidean distance etc.</p>
+<h2 id="vector_databases_1">Vector Databases<a class="headerlink" href="#vector_databases_1" title="Permanent link">&para;</a></h2>
+<p>There are a number of exclusive vector databases that can be used for semantic search, but many traditonal databases have Vector search available as an option.</p>
+<p>Postgres has PGVector and PGAI for example that enable us to use just one database for hybrid search - both keyword and semantic search.</p>
+<p>This can be much faster as the semantic search is done in the database as SQL actions and there is not latency involved to connect to systems elsewhere.</p>
+<p>Indeed, Postgres claims to be as fast if not faster than many commercial Vector Database Services, <a href="https://www.timescale.com/blog/how-we-made-postgresql-as-fast-as-pinecone-for-vector-data/">https://www.timescale.com/blog/how-we-made-postgresql-as-fast-as-pinecone-for-vector-data/</a></p>
 
 
 

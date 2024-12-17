@@ -63,7 +63,6 @@ markdown_extensions:
 # Page tree
 nav:
   - "About": "index.md"
-  - "Proposal": "proposal.md"
   - "Pipeline":
       - "Gather": "pipeline/01_gather.md"
       - "Ingest and NLP": "pipeline/02_ingest.md"
@@ -74,6 +73,7 @@ nav:
       - "User rates and cache": "pipeline/07_user_rate_and_cache.md"
 
   - "Concepts":
+      - "Vector DBs": "concepts/vector_databases.md"
       - "Agents": "concepts/agents.md"
       - "Graph DB": "concepts/graph_db.md"
       - "Model Fine Tuning": "concepts/fine_tuning.md"
