@@ -103,6 +103,8 @@ LLMs are well established in the field of AI Agents. We create a profile of an a
 
 An example:
 
+![agent-example](./images/agents/on_off_topic.png)
+
 =============================================================
 
 You are an expert medical reviewer. Grade the following content for accuracy and completeness. If you are unable to do this then say "I don't know".
