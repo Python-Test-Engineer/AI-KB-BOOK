@@ -1,4 +1,3 @@
-
 # The Pytest Cookbook - *recipes with videos and repos*
 
 ## Purpose of this book 
