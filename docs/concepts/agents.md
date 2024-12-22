@@ -15,6 +15,8 @@ Autonomous AI Agents are able to determnine a next step based on the LLM which c
 
 Prompt or Flow Engineering is where we add additional instruction to the query for the LLM to follow.
 
+### Natural Language
+
 In many ways it is like pseudo-code where we spec out what we want the endpoint API to do along with the data we send:
 
 ```
