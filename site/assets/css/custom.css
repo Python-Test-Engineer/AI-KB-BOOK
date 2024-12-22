@@ -1,11 +1,13 @@
-
 .md-nav__title {
     font-size: 22px;
     font-weight: 800;
 
 }
-p, li {
-    font-size: 18px;}
+
+p,
+li {
+    font-size: 24px;
+}
 
 
 h2 {
@@ -16,7 +18,9 @@ h2 {
 h3 {
     /* margin: 3rem 0rem 1rem 0rem !important; */
     padding: 0rem 0rem 0.5rem 0.5rem !important;
-    border-left: solid 2px rgb(70, 150, 236);
+    border-left: solid 5px rgb(228, 45, 228);
+    font-size: 22px;
+    font-weight: bold;
 }
 
 

@@ -45,3 +45,5 @@ This more than just `LIKE 'word*` and for many searches that involve terms much 
 This is called Hybrid Search.
 
 https://bigmachine.io/2022/06/12/creating-a-full-text-search-engine-in-postgresql-2022/
+
+<br>

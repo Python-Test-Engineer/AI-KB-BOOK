@@ -1,24 +1,30 @@
 # AI Powered Knowledge Systems 
 
-## Mission
+This is a collection of notes on AI Powered Knowledge Systems.
 
-To create a Software as a Service, (SASS), product that enable the medical community to harness the power of AI to improve extraction and presentation of relevent, accurate and complete information from the vast amount of data available in the medical literature.
+## Content Creation
 
-## Key points
+![flow](./images/agents/unstructured-processing.png)
 
-![flow](./images/rag/elevator-pitch.png)
+- We extract all the 'atoms' of information from 'molecules' of articles, like paragraphs, tables, images etc.
+- Using unstructured.io we can parse any type of file into structured data.
+- Any tabular or image atoms can be further processed using LLMs to generate content and metadata.
+- The atoms are then stored in a database. Vectorisation can take place in the database when we use PostgresML or done separately.
+- We can create Named Entities and use them as tags.
+- We then use LLMs and semantic search along with keyword search to answer questions form a user.
+- An emerging technology is to use Graph Databases to develop retlationships between atoms and molecules for further retrieval capabilites.
 
-## How
+## Langgraph Workflows
 
-![flow](./images/rag/elevator-flowchart.png)
+Uisng Lnaggraph, we can convert business case flowcharts to Agentic workflows.
 
-We break up the molecules of an article into atoms, getting their content and metadata, and then use LLMs and semantic search to answer questions form a user.
+This is the compiled workflow for an example Langgraph workflow.
 
-If the atoms contain tabular data, we will have both the text and HTML content so we can use an LLM to get information about it.
+All nodes and edges are customisable and we can add/delete nodes and edges as required.
 
-If it has an image, we can use an LLM to get information about it as well.
+![TLDR](./images/agents/langchain-academy-researcher-PLUS.png)
 
-It is multi-modal covering a great range of file types like Word, Powerpoint and we can also process audio and video.
+## Queries
 
 In our database we can then reconstuct any article through various strategies of gathering and joining atoms.
 
@@ -324,7 +330,6 @@ Using Langflow, we can create a workflow to process the documents. In essence, w
 
 Langflow has NODES (entities) and EDGES (connections between nodes). They can be 1:1 or conditional (if/else).
 
-![strategy](./images/rag/agentic-rag.png)
 
 ![strategy](./images/rag/langgraph-mermaid.png)
 
@@ -368,48 +373,5 @@ One emerging technology is GRAPHRAG. Here, the standard database we use for keyw
 
 *What if we could run a query that gathers all connected and relevant atoms to create a super-article?* (Instead of creating this 'manually' through imperative code).
 
-## Requirements
-
-### Data
-
-We will need a set of pdfs, Word, Powerpoint and Excel documents etc for a particular domain area to carry out evaluation of the app.
-
-### What to do?
-
-Determine what users will want to do, like summarising, collating, queries etc.
-
-What would a human researcher want and what would they do to get their final response?
-
-### Benchmarking
-
-A number of benchmarking sets of questions that can be processed to get generated responses. These will be in a spreadsheet with metrics and overall rating for a domain expert to evaluate the app.
-
-![Excel](./images/rag/evaluation_excel.png)
-
-<p style="color:cyan;font-weight:bold;font-style:italic;letter-spacing:3px">THIS IS THE ULTIMATE EVALUATION OF THE APP</p>
-
-### Hosting
-
-This is detailed in the architecture section.
-
-Postgres/Django on render.com.
-
-The front end is decoupled from backend so that we can change the technology of the front end as we see fit. It is the embellishment part but having a range of functionality for the user is important as they must be able to select whaht they want to do with options.
-
-## Timescale
-
-Most of the core is done soe March-June will be final develpoment, testing and evaluation. 
-
-By the end of June, a SaSSO will be ready to go live or the project will come to an end.
-
-## Costs
-
-The cost for unstructured.io for say 50 articles = 500 pages is a nominal $5.
-
-When useage grows, the costs will increase. These will need to be borne by the project or users.
-
-For customers, they can use their own OpenAI account. Charges for DB and website traffic will be borne by the project/customer/ 
-
-This mechanism is yet to be determined.
 
 <br>
