@@ -15,8 +15,7 @@ This is a collection of notes on AI Powered Knowledge Systems.
 - An emerging technology is to use Graph Databases to develop retlationships between atoms and molecules for further retrieval capabilites.
 
 ## Langgraph Workflows
-
-Uisng Lnaggraph, we can convert business case flowcharts to Agentic workflows.
+Usisng Langgraph, we can convert business case flowcharts to Agentic workflows.
 
 This is the compiled workflow for an example Langgraph workflow.
 
