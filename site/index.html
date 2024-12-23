@@ -1497,6 +1497,16 @@
 <p>This is the compiled workflow for an example Langgraph workflow.</p>
 <p>All nodes and edges are customisable and we can add/delete nodes and edges as required.</p>
 <p><img alt="TLDR" src="images/agents/langchain-academy-researcher-PLUS.png" /></p>
+<p>The workflow we will using is the following:</p>
+<p><img alt="strategy" src="images/rag/flowchart.png" /></p>
+<ul>
+<li>Better questions get better answers so we get the LLM to write 5 versions of the user's question and answer them all.</li>
+<li>We rerank the documents based on the quality of the answers.</li>
+<li>We filter out documents that are not relevant to the question.</li>
+<li>We can then check that the answer is not hallucinated.</li>
+<li>With the content and sources, we can generate a report or answer the user's question.</li>
+<li>We can also connect to other data sources to enhance the answers and reports.</li>
+</ul>
 <h2 id="queries">Queries<a class="headerlink" href="#queries" title="Permanent link">&para;</a></h2>
 <p>In our database we can then reconstuct any article through various strategies of gathering and joining atoms.</p>
 <p>We have 4 ways of performing queries</p>

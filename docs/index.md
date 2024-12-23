@@ -23,6 +23,17 @@ All nodes and edges are customisable and we can add/delete nodes and edges as re
 
 ![TLDR](./images/agents/langchain-academy-researcher-PLUS.png)
 
+The workflow we will using is the following:
+
+![strategy](./images/rag/flowchart.png)
+
+ - Better questions get better answers so we get the LLM to write 5 versions of the user's question and answer them all.
+ - We rerank the documents based on the quality of the answers.
+ - We filter out documents that are not relevant to the question.
+ - We can then check that the answer is not hallucinated.
+ - With the content and sources, we can generate a report or answer the user's question.
+ - We can also connect to other data sources to enhance the answers and reports.
+
 ## Queries
 
 In our database we can then reconstuct any article through various strategies of gathering and joining atoms.
