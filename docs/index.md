@@ -2,7 +2,13 @@
 
 This is a collection of notes on AI Powered Knowledge Systems.
 
-## Content Creation
+## Database
+
+We use Postgresql as the database and rather than process documents with each query, we use databases to store the documents and then use keyword and semantic search to find the most relevant elements of information. To enhance speed and accuracy, further tradional Natural Language Processing is applied.
+
+I have found [https://unstructured.io/](https://unstructured.io/) to be a leader in parsing all types of files into structured data. The cost for multi-modal files is $10 for 1,000 pages and for single-modal it is $10 for 10,000 pages.
+
+This is a no brainer cost wise as far as I am concerned.
 
 ![flow](./images/agents/unstructured-processing.png)
 
@@ -14,7 +20,26 @@ This is a collection of notes on AI Powered Knowledge Systems.
 - We then use LLMs and semantic search along with keyword search to answer questions form a user.
 - An emerging technology is to use Graph Databases to develop retlationships between atoms and molecules for further retrieval capabilites.
 
-## Langgraph Workflows
+The atoms are stored in a database in the following format with additonal Natural Language Processing techniques applied to speed up future search:
+
+![database-fields](./images/rag/database_fields.png)
+
+## Query Strategies
+
+There are many and growing number of strategies for doing semantic search.
+
+The image below is for illustrative rather than informative puproses and shows the growing number of strategies that are being implemented. 
+
+These would be modular and different ones can be used based on user queries.
+
+![RAG](./images/rag/current-rag-architecture.png)
+
+## Crowd Sourced Answers
+
+![crowd-sourced-fields](./images/rag/crowd-sourced-answers.png)
+
+## Agentic AI Agents
+
 Usisng Langgraph, we can convert business case flowcharts to Agentic workflows.
 
 This is the compiled workflow for an example Langgraph workflow.
