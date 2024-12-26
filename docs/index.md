@@ -69,9 +69,35 @@ We have 4 ways of performing queries
 
 2. Vector search based on semantic similarity using LLMs.
 
-3. Graph based serach using relationships between entities. This is an emerging technology for RAG, (Retreival Augmented Generation which will be explained later).
+3. Graph based serach using relationships between entities. This is an emerging technology for RAG, (Retreival Augmented Generation which will be explained later). One example would be a query that asks for information for a collection of authors who have worked together  previously but not currently. Or we may detect entities in the text that are not encapsulated in the database but would be useful in queries.
 
 4. Crowd sourced answers - when a user runs a query and gets a result, we can ask the user to rate it and add their own comments. There are a number of features to this which will be discussed later. This will also provide a dataset for further ML options.
 
 With this atomic version of data, we can carry out summarisation, queries etc. and also build reports that aggregate information from many sources.
+
+## Costs and Income
+
+### Data Ingestion
+
+We have seen previously that unstructured.io costs $10 for 1,000 muliti-modal pages and $10 for 10,000 single-modal pages. If we further process tabular data and images there are LLM costs for this.
+
+Using a wighted average of the costs for 1,000 and 10,000 pages we get a cost of $5 for 1,000 pages and $50 for 10,000 pages.
+
+### Servers
+
+Hosting a database and API has a base cost of $30-100 per month dependin gon type of infrastructure used. This can then scale up as required, which will incur additionsal costs but these would be covered by users.
+
+LLM costs can be covered by the user entering their own API key to use OpenAI for example or the cost could be calculated based on useage and billed accordingly.
+
+Income can be generated on a Pay As you Go basis or a subscription model. A hybrid is also possible.
+
+### Develpment
+
+Coding is 10% of the project.
+
+Data collection and preparation, combined with monitoring the systems is the other 90%.
+
+Evaluating performance of the system is also important.
+
+What is important to remember is that this system is not just a Knowledge Base but also an AI Research Assistant.
 

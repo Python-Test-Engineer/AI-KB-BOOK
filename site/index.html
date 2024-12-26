@@ -345,6 +345,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#costs_and_income" class="md-nav__link">
+    <span class="md-ellipsis">
+      Costs and Income
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Costs and Income">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data_ingestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Ingestion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#develpment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Develpment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1052,6 +1094,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#costs_and_income" class="md-nav__link">
+    <span class="md-ellipsis">
+      Costs and Income
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Costs and Income">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data_ingestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Ingestion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#develpment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Develpment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1118,13 +1202,26 @@
 <p>Vector search based on semantic similarity using LLMs.</p>
 </li>
 <li>
-<p>Graph based serach using relationships between entities. This is an emerging technology for RAG, (Retreival Augmented Generation which will be explained later).</p>
+<p>Graph based serach using relationships between entities. This is an emerging technology for RAG, (Retreival Augmented Generation which will be explained later). One example would be a query that asks for information for a collection of authors who have worked together  previously but not currently. Or we may detect entities in the text that are not encapsulated in the database but would be useful in queries.</p>
 </li>
 <li>
 <p>Crowd sourced answers - when a user runs a query and gets a result, we can ask the user to rate it and add their own comments. There are a number of features to this which will be discussed later. This will also provide a dataset for further ML options.</p>
 </li>
 </ol>
 <p>With this atomic version of data, we can carry out summarisation, queries etc. and also build reports that aggregate information from many sources.</p>
+<h2 id="costs_and_income">Costs and Income<a class="headerlink" href="#costs_and_income" title="Permanent link">&para;</a></h2>
+<h3 id="data_ingestion">Data Ingestion<a class="headerlink" href="#data_ingestion" title="Permanent link">&para;</a></h3>
+<p>We have seen previously that unstructured.io costs $10 for 1,000 muliti-modal pages and $10 for 10,000 single-modal pages. If we further process tabular data and images there are LLM costs for this.</p>
+<p>Using a wighted average of the costs for 1,000 and 10,000 pages we get a cost of $5 for 1,000 pages and $50 for 10,000 pages.</p>
+<h3 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link">&para;</a></h3>
+<p>Hosting a database and API has a base cost of $30-100 per month dependin gon type of infrastructure used. This can then scale up as required, which will incur additionsal costs but these would be covered by users.</p>
+<p>LLM costs can be covered by the user entering their own API key to use OpenAI for example or the cost could be calculated based on useage and billed accordingly.</p>
+<p>Income can be generated on a Pay As you Go basis or a subscription model. A hybrid is also possible.</p>
+<h3 id="develpment">Develpment<a class="headerlink" href="#develpment" title="Permanent link">&para;</a></h3>
+<p>Coding is 10% of the project.</p>
+<p>Data collection and preparation, combined with monitoring the systems is the other 90%.</p>
+<p>Evaluating performance of the system is also important.</p>
+<p>What is important to remember is that this system is not just a Knowledge Base but also an AI Research Assistant.</p>
 
 
 
