@@ -91,7 +91,13 @@ LLM costs can be covered by the user entering their own API key to use OpenAI fo
 
 Income can be generated on a Pay As you Go basis or a subscription model. A hybrid is also possible.
 
-### Develpment
+### Monitoring
+
+If this is a Sofware as a Service, (SASS), product then it is important to monitor the performance of the system and handle user queries.
+
+Like any business, this would be based on financial principles.
+
+### Development
 
 Coding is 10% of the project.
 
