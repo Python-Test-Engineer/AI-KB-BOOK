@@ -38,9 +38,15 @@ These would be modular and different ones can be used based on user queries.
 
 ![crowd-sourced-fields](./images/rag/crowd-sourced-answers.png)
 
-## Agentic AI Agents
+## AI Agents
 
-Usisng Langgraph, we can convert business case flowcharts to Agentic workflows.
+The definition of and Agent is quite broad and varied.
+
+Github states: "Agentic AI refers to artificial intelligence capable of making decisions, planning, and adapting to new information in real time. AI agents learn and enhance their performance through feedback, utilizing advanced algorithms and sensory inputs to execute tasks and engage with their environments."
+
+Perhaps a simple version is from Langchain, which defines and agent as using LLM to determin the flow of an app.
+
+Using Langgraph, we can convert business case flowcharts to Agentic workflows.
 
 This is the compiled workflow for an example Langgraph workflow.
 

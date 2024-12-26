@@ -102,7 +102,7 @@ Two years ago when we first looked at RAG, the strategy was to take a document a
 
 This works very well for single modality text documents where this Niave Rag is in effect a search tool, taking an unstructured query and using LLMs and semantic search to find relevant chunks and answer the question.
 
-## Changes in 2yrs
+## Changes in last 2yrs
 
 In the past two years there have been many changes in the space.
 
