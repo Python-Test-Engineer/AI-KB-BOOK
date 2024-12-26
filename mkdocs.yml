@@ -63,6 +63,7 @@ markdown_extensions:
 # Page tree
 nav:
   - "About": "index.md"
+  - "Current Concepts": "current_concepts.md"
   - "Pipeline":
       - "Gather": "pipeline/01_gather.md"
       - "Ingest and NLP": "pipeline/02_ingest.md"
