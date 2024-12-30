@@ -18,3 +18,6 @@ The domain expert can rate the repsonse for the following:
 Only those that get a YES to ACCURACY and RELEVANCE will be considered as they are essential for a good response.
 
 This is a very effective way of evaluating the LLM and will help us to improve our system and will be modiofied in the future as needed.
+
+### Example
+![domain expert](../images/rag/evaluation_excel.png)

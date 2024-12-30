@@ -62,7 +62,8 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - "About": "index.md"
+  - "TLDR;": "index.md"
+  - "About": "more.md"
   - "Current Concepts": "current_concepts.md"
   - "Pipeline":
       - "Gather": "pipeline/01_gather.md"
@@ -78,9 +79,7 @@ nav:
       - "Agents": "concepts/agents.md"
       - "Graph DB": "concepts/graph_db.md"
       - "Model Fine Tuning": "concepts/fine_tuning.md"
-      - "Semantic Search": "concepts/semantic_search.md"
-
-  - "Architecture": "architecture/stack.md"
+  # - "Architecture": "architecture/stack.md"
   - "Evaluation":
       - "Overview": "evaluation/overview.md"
       - "LLM as Judge": "evaluation/rate_with_llm.md"
