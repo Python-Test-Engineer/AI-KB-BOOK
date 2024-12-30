@@ -1,6 +1,6 @@
 # Agents
 
-AI Agents is software that has a conversation with an LLM to determine application flow.
+An AI Agent is some code that has a conversation with an LLM to determine application flow.
 
 Agents have access to tools that enable them to carry out functions and return observations to the application layer along with NEXT steps.
 
