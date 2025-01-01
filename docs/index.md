@@ -14,6 +14,8 @@
 
 *All componets are modular enabling customisation as needed as well as offering a range of options for users to choose from.*
 
+## Details
+
 ### Processing data sources
 
 If TEXT, we can use Natural Language Processing techniques to summarise, extract entities and rephrase content for better semantic search and also tradional Full Text Search in Postgressql database.
