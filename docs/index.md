@@ -1,6 +1,18 @@
-# TLDR;
+# JK
 
-*too long did not read*
+## In essence...
+
+*We split PDF molecules and other data sources into atoms and store them in a database.*
+
+*We further process these atoms as needed to enhance search and reporting.*
+
+*Users rate answers to provide a 'crowd sourced' information store - IS_ACCURATE, IS_RELEVANT, IS_COMPLETE and comments/notes added. We can use this information to provide fast answers or aggregate information from many sources along with the crowd source answers*
+
+*We use AI Agents to convert workflows into Agentic Retrieval Augmented Generation for Q & A and report making.*
+
+*Importing and exporting of Knowledge Bases and other data sources enables pooling of knowledge between organisations.*
+
+*All componets are modular enabling customisation as needed as well as offering a range of options for users to choose from.*
 
 ### Processing data sources
 
