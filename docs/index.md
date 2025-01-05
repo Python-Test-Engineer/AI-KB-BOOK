@@ -2,17 +2,31 @@
 
 ## In essence...
 
+### Bullet points
+
 *We split PDF molecules and other data sources into atoms and store them in a database.*
 
-*We further process these atoms as needed to enhance search and reporting.*
+*We further process these atoms using traditonal Natural Language Processing techniques as needed to enhance search and reporting.*
 
-*Users rate answers to provide a 'crowd sourced' information store - IS_ACCURATE, IS_RELEVANT, IS_COMPLETE and comments/notes added. We can use this information to provide fast answers or aggregate information from many sources along with the crowd source answers*
+*We vectorise these chunks to enable AI Semantic Search.*
+
+*We can use other LLMs to analyse tables and images and generate content and metadata.*
 
 *We use AI Agents to convert workflows into Agentic Retrieval Augmented Generation for Q & A and report making.*
+
+*Users rate answers to provide a 'crowd sourced' information store - IS_ACCURATE, IS_RELEVANT, IS_COMPLETE and comments/notes added. We can use this information to provide fast answers or aggregate information from many sources along with the crowd source answers*
 
 *Importing and exporting of Knowledge Bases and other data sources enables pooling of knowledge between organisations.*
 
 *All componets are modular enabling customisation as needed as well as offering a range of options for users to choose from.*
+
+What would a human researcher do...?
+
+
+### A modular system
+
+![strategy](./images/rag/flowchart.png)
+
 
 ## Details
 
@@ -63,7 +77,5 @@ Reports would list and summarise knowledge from:
 
 Being a modular system, the system can be adapted as needed as well as offering a range of options for users to choose from.
 
-### Initial Workflow
-![strategy](./images/rag/flowchart.png)
 
 <br>
