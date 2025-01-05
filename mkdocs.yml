@@ -76,7 +76,7 @@ nav:
   - "Technical Concepts":
       - "Vector DBs": "concepts/vector_databases.md"
       - "Agents": "concepts/agents.md"
-      - "Graph DB": "concepts/graph_db.md"
+      - "Graphs": "concepts/graphs.md"
       - "Model Fine Tuning": "concepts/fine_tuning.md"
   - "Evaluation":
       - "Overview": "evaluation/overview.md"
