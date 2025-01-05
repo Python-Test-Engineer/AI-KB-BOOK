@@ -98,4 +98,7 @@ Having a Supervisor Agent that manages agents and crews can be useful for large 
 
 It is worth noting that Agents do not have to have an LLM and can be coded in the traditonal way. These softwared designs are well established over decades.
 
+## SMOLAGENTS
+
+A new technology that combines LLM with Python rather than LLM and JSON for tool use.
 <br>

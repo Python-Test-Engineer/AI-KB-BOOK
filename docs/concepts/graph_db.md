@@ -1,4 +1,8 @@
-# Graph Databases
+# Graphs
+
+## Graph Networks
+
+## Graph Databases
 
 A graph database is a database that stores data in the form of a graph.
 
