@@ -2,7 +2,7 @@
 
 AI Powered Knowledge Systems is an architecture and app to enable organisations to search through their knowledge base for answers to questions and use AI Agents to create reports and other content.
 
-There are a number of core components in the architecture, listed below.
+There are a number of core components in the architecture and these are listed below.
 
 ## Database
 

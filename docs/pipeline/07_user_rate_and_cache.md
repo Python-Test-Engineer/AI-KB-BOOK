@@ -13,3 +13,5 @@ When a cached response is offered to a user, they could see statistics of what o
 This is an established techincal feature of many article sites.
 
 A clever UI could make all this feedback data and additonal information clean and effective rather than cluttering up the page.
+
+![crowd-source](../images/rag/crowd-sourced-answers.png)

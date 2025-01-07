@@ -924,6 +924,33 @@
 
 <h1 id="generation">Generation<a class="headerlink" href="#generation" title="Permanent link">&para;</a></h1>
 <p>Finally, once all thge checks have been passed the LLM can pass the response to the user ready for user evaluation and feedback.</p>
+<p>We can use agents that create specific reports based on the instructions we give it to generate reports for a user.</p>
+<p>An example of this is Langgraph's <strong>report-mAIstro</strong> that uses parallel and serial processes to generate sections for a report based on the user's question:</p>
+<p><img alt="report-maistro" src="../../images/agents/report-maistro.png" /></p>
+<p>All we need modify is the prompt template:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>This report type focuses on comparative analysis.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>The report structure should include:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>1. Introduction (no research needed)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>   - Brief overview of the topic area
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   - Context for the comparison
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>2. Main Body Sections:
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>   - One dedicated section for EACH offering being compared in the user-provided list
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   - Each section should examine:
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>     - Core Features (bulleted list)
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>     - Architecture &amp; Implementation (2-3 sentences)
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>     - One example use case (2-3 sentences)
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>3. No Main Body Sections other than the ones dedicated to each offering in the user-provided list
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>4. Conclusion with Comparison Table (no research needed)
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>   - Structured comparison table that:
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>     * Compares all offerings from the user-provided list across key dimensions
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>     * Highlights relative strengths and weaknesses
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>   - Final recommendations
+</span></code></pre></div>
+<p>meaning that a non-tech business analyst, for example, can develop a report on any topic area in any style by supplying a text file to the developers or submit via a form for example.</p>
 
 
 

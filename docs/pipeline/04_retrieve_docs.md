@@ -6,3 +6,5 @@ We will have a number of Prompt Templates and when the user finally rates the re
 
 This is where PROMPT ENGINEERING comes into play.
 
+We can ask the LLM to improve on the response by resubmitting the query with a request to improve it.
+

@@ -1,6 +1,8 @@
 # JK
 
-## In essence...
+This page is primarily for JK but is a useful TLDR; for others...
+
+## In essence
 
 ### Bullet points
 

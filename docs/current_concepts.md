@@ -28,17 +28,17 @@ There are a few different methods such as cosine similarity, dot product, Euclid
 
 RAG = Retrieval Augmented Generation
 
-RETRIEVAL:
+*RETRIEVAL*:
 
 We retrieve the most useful information from a vector database and then use it to generate a response using the LLM.
 
-AUGEMENTED:
+*AUGEMENTED*:
 
 We combine the retreived documents and the query and pass it to the LLM to generate a response.
 
-GENERATION:
+*GENERATION*:
 
-The LLM generates the final response.
+The LLM generates the final response with the augmented context.
 
 ### Prompt Engineering
 
@@ -60,7 +60,15 @@ Where possible, use references from the documents.
 
 I like to thing of it as giving an actor details about a scene or giving a detailed job description to an researcher.
 
+It is why many of the tech leaders say the new programming language is English/Natural Language. Our work is to create detailed and informative specs for the LLMs.
+
 ### AI Agents
+
+What is an Agent? 
+
+Anthropic says:
+
+![agents](./images/agents/what_are_agents_anthropic.png)
 
 LLMs are well established in the field of AI Agents. We create a profile of an agent with instructions and then it can carry out that task, calling upon tools we may have given it.
 

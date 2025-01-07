@@ -1411,12 +1411,12 @@
 <h3 id="rag">RAG<a class="headerlink" href="#rag" title="Permanent link">&para;</a></h3>
 <p><img alt="nvidia-rag" src="../images/rag/nvidia-rag.png" /></p>
 <p>RAG = Retrieval Augmented Generation</p>
-<p>RETRIEVAL:</p>
+<p><em>RETRIEVAL</em>:</p>
 <p>We retrieve the most useful information from a vector database and then use it to generate a response using the LLM.</p>
-<p>AUGEMENTED:</p>
+<p><em>AUGEMENTED</em>:</p>
 <p>We combine the retreived documents and the query and pass it to the LLM to generate a response.</p>
-<p>GENERATION:</p>
-<p>The LLM generates the final response.</p>
+<p><em>GENERATION</em>:</p>
+<p>The LLM generates the final response with the augmented context.</p>
 <h3 id="prompt_engineering">Prompt Engineering<a class="headerlink" href="#prompt_engineering" title="Permanent link">&para;</a></h3>
 <p>Now the preferred term is <em>flow engineering</em>.</p>
 <p>There is a difference between sending the documents and query to the LLM on their own compared to using a prompt template:</p>
@@ -1427,7 +1427,11 @@
 <p>Where possible, use references from the documents.</p>
 <p>====================================</p>
 <p>I like to thing of it as giving an actor details about a scene or giving a detailed job description to an researcher.</p>
+<p>It is why many of the tech leaders say the new programming language is English/Natural Language. Our work is to create detailed and informative specs for the LLMs.</p>
 <h3 id="ai_agents">AI Agents<a class="headerlink" href="#ai_agents" title="Permanent link">&para;</a></h3>
+<p>What is an Agent? </p>
+<p>Anthropic says:</p>
+<p><img alt="agents" src="../images/agents/what_are_agents_anthropic.png" /></p>
 <p>LLMs are well established in the field of AI Agents. We create a profile of an agent with instructions and then it can carry out that task, calling upon tools we may have given it.</p>
 <p>An example:</p>
 <p><img alt="agent-example" src="../images/agents/on_off_topic.png" /></p>
