@@ -1,6 +1,6 @@
-# JK
+# TLDR
 
-This page is primarily for JK but is a useful TLDR; for others...
+A quick TLDR...
 
 ## In essence
 

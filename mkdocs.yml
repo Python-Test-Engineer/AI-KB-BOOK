@@ -62,7 +62,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - "JK": "index.md"
+  - "TLDR": "index.md"
   - "About": "more.md"
   - "Current Concepts": "current_concepts.md"
   - "Pipeline":
