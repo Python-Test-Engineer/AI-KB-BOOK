@@ -62,9 +62,9 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - "TLDR": "index.md"
+  - "About": "index.md"
   - "Talks": "talks.md"
-  - "About": "more.md"
+  - "TLDR": "tldr.md"
   - "Current Concepts": "current_concepts.md"
   - "Pipeline":
       - "Gather": "pipeline/01_gather.md"
