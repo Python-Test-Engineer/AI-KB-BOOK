@@ -64,7 +64,8 @@ markdown_extensions:
 nav:
   - "About": "index.md"
   - "Talks": "talks.md"
-  - "TLDR": "tldr.md"
+  - "AI Agents and Data": "ai_data.md"
+  - "RAG TLDR": "tldr.md"
   - "Current Concepts": "current_concepts.md"
   - "Pipeline":
       - "Gather": "pipeline/01_gather.md"

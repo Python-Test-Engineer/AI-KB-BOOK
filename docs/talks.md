@@ -1,14 +1,16 @@
 
 # Talks and Workshops 
+- Brighton Py Feb 2025: AI as API in everyday Python apps - 60 minute talk and demo.
 
-Pycon Ireland Nov 2024: Getting started with Pytest - 2 hr workshop.
+- Django Japan Congress Feb 2025 (online): Implementing Agentic AI solutions in Django from scrathc - 45 minute talk
 
-Conf42: Implementing Agentic AI Solutions in Python from scratch - 50 minute talk.
+- Conf42 (online) Feb 2025: Implementing Agentic AI Solutions in Python from scratch - 50 minute talk.
 
-Soon...
+- PyCon Ireland Nov 2024: Getting started with Pytest - 2 hr workshop.
 
-Django Japan Congress Feb 2024: Implementing Agentic AI solutions in Django from scrathc - 45 minute talk
+<span style="color:orange;">Next...</span>
 
-Brighton Py Feb 2024: AI as API in everyday Python apps - 60 minute talk and demo.
+- DjangoConEurope April 2025: Implementing Agentic AI solutions in Django from scrathc - 90 minute workshop.
+![djcon](./images/agents/djcon.png)
 
-DjangoConEurope April 2024: Implementing Agentic AI solutions in Django from scrathc - 90 minute workshop.
+<hr>

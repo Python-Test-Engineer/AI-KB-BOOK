@@ -14,6 +14,8 @@ Retrieval Augmented Generation enables us to add domain specific data to our our
 
 The use of AI Agents where agents can plan, retrieve, refine and generate answers and reports is often called Agentic RAG.
 
-## This
+## AI Agents in the Data Pipeline
 
-This is a collection of research, planning and implementation to enable others to benefit from my time and efforts as I have done so from others.
+The use of AI Agents in the Data Pipeline from ETL, Analysis to Reporting enables us to generate reports from data sources.
+
+<br>
