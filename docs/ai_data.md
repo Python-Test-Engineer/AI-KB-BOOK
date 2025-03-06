@@ -1,5 +1,19 @@
 # AI Agents and Data
 
+- R in Python https://pypi.org/project/rpy2/
+- Data extraction with unstructured.io
+- 3 types of attendees
+- New reasoning models for Pipelines 
+- Prompt vs Rag vs Fine Tuning
+- Understand AI Agents from scratch
+- SQL generation
+- Report selection router with RAG - hybrid to select best SQL query based on meta information
+- Agentic Rag and LLM workflows
+- Multi Agent systems and frameworks like ReportMaistro
+- Using vision models for analysis
+- Infomertial
+
+
 Where and how are AI Agents able to help us in the Data Pipeline from ETL, Analysis to Reporting?
 
 We focus on 3 types of attendees:
