@@ -1,4 +1,4 @@
-# AI Poweered Knowledge Systems
+# AI Powered Knowledge Systems
 
 This is a work in progress where I collect resources and ideas concerning AI Search, RAG, Agentic AI and AI Agents in the Data Pipeline.
 
