@@ -1,5 +1,13 @@
 # AI Agents and Data
 
+![01](./images/01-etl.png)
+
+![02](./images/02-planning.png)
+
+![03](./images/03-query.png)
+
+![04](./images/04-reporting.png)
+
 ## Notes for meeting only...
 
 - R in Python https://pypi.org/project/rpy2/
