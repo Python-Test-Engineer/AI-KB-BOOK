@@ -67,7 +67,7 @@ nav:
   - "AI Agents and Data": "ai_data.md"
   - "RAG TLDR": "tldr.md"
   - "Current Concepts": "current_concepts.md"
-  - "Pipeline":
+  - "RAG Pipeline":
       - "Gather": "pipeline/01_gather.md"
       - "Ingest and NLP": "pipeline/02_ingest.md"
       - "Improve question": "pipeline/03_improve_question.md"

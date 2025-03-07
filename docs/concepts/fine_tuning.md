@@ -1,6 +1,6 @@
 # Fine tuning
 
-See [Openai Fine Tuning](https://platform.openai.com/docs/guides/fine-tuning/overview).
+See [Openai Fine Tuning](https://cookbook.openai.com/examples/how_to_finetune_chat_models).
 
 RAG, Retrieval Augnented Generation, can be used to supplement the query with contextual data collected from our data sources. This resolves the issue that the LLM will not have been trained on our data.
 

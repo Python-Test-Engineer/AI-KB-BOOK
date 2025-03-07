@@ -1,6 +1,6 @@
 # RAG TLDR
 
-A quick TLDR...
+*A quick TLDR for a colleague...*
 
 ## In essence
 

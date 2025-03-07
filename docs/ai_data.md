@@ -1,5 +1,7 @@
 # AI Agents and Data
 
+## Notes for meeting only...
+
 - R in Python https://pypi.org/project/rpy2/
 - Data extraction with unstructured.io
 - 3 types of attendees
@@ -22,7 +24,7 @@ We focus on 3 types of attendees:
 2. The data professional who needs to understand how AI can help their organisation and will need to present information to other members of the organisation being the 'AI person'.
 3. The non technical person who will want to get answers and reports from the data but who are not data scientists. They want the proverbial 'chat with data' experience.
 
-## When and Why?
+### When and Why?
 
 A question I ask myself is 'When and why will AI Agents be useful in the data pipeline?' compared to deterministic pipelines that we have already been using successfully for years?
 
@@ -31,7 +33,7 @@ Whilst AI can offer many helpful tools to the data scientist/developer as in cod
 Adding 'a bit of Agentic AI' may also be valuable to an organisation that feels a certain pressure to have Agentic AI even if they don't really need it.
 
 
-## Reasoning Models
+### Reasoning Models
 
 Reasoning models differ from current models in that we give a goal, how we want the output and what we want to avoid, and the LLM figures it all out, displaying its thought process as part of the response.
 
@@ -41,7 +43,7 @@ These are becoming more advanced and cheaper as time goes by.
 
 For quick 'ChatGPT' type answers we can use less powerful models.
 
-## Now vs Oct 2025
+### Now vs Oct 2025
 
 In the next 7 months to mid October, the AI landscape will have changed a great deal. 
 
@@ -49,7 +51,7 @@ In the next 7 months to mid October, the AI landscape will have changed a great 
 - AI Agents will have more robust and capable frameworks available.
 - Multi modality will be more advanced.
 
-## Features of Agentic AI
+### Features of Agentic AI
 
 - Chat with data using Text2SQL and RAG techniques alongside well established and deterministic SQL reports already in the system.
 - Generating reports with more Natural Language as the mortar around the data bricks.
@@ -57,7 +59,7 @@ In the next 7 months to mid October, the AI landscape will have changed a great 
 - Vision models that can analyse images of charts etc.
 - Extending data sources to include PDFs, images, videos, audio and other formats...'one Agent to rule them all'.
 
-## Products and Services
+### Products and Services
 
 In creating the workshop, if we take a real world case (no real data though), we can start to think about how AI Agents can help the organisation.
 
@@ -66,4 +68,5 @@ With this in mind, over the next 7 months once can create products/services that
 The 3 hour workshop will cover the landscape and some implementations so that people have a solid grasp and understanding of AI Agents.
 
 Many may need further assistance or development and D can then be in a postion to offer these. The workshop could be like the US 'informertial' that combines teaching value as well as product advertisement.
+
 <br>
