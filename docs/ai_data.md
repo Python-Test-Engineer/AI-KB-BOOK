@@ -21,7 +21,7 @@
 - Agentic Rag and LLM workflows
 - Multi Agent systems and frameworks like ReportMaistro
 - Using vision models for analysis
-- Infomertial
+- Infomercial
 
 
 Where and how are AI Agents able to help us in the Data Pipeline from ETL, Analysis to Reporting?
@@ -75,6 +75,6 @@ With this in mind, over the next 7 months once can create products/services that
 
 The 3 hour workshop will cover the landscape and some implementations so that people have a solid grasp and understanding of AI Agents.
 
-Many may need further assistance or development and D can then be in a postion to offer these. The workshop could be like the US 'informertial' that combines teaching value as well as product advertisement.
+Many may need further assistance or development and D can then be in a postion to offer these. The workshop could be like the US 'Infomercial' that combines teaching value as well as product advertisement.
 
 <br>
