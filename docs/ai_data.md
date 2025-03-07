@@ -12,25 +12,26 @@
 
 - R in Python https://pypi.org/project/rpy2/
 - Data extraction with unstructured.io
-- 3 types of attendees
+- 2 types of attendees
 - New reasoning models for Pipelines 
 - Prompt vs Rag vs Fine Tuning
 - Understand AI Agents from scratch
-- SQL generation
+- SQL generation - NOT LLM uses schema to create SQL but tried and tested SQL from RAG type query.
 - Report selection router with RAG - hybrid to select best SQL query based on meta information
 - Agentic Rag and LLM workflows
 - Multi Agent systems and frameworks like ReportMaistro
-- Using vision models for analysis
+- Using vision models for analysis and data extraction
 - Infomercial
 
 
 Where and how are AI Agents able to help us in the Data Pipeline from ETL, Analysis to Reporting?
 
-We focus on 3 types of attendees:
+We focus on 2 types of attendees:
 
 1. The Developer/Data Scientist who wants to understand what and how AI Agents work, what they can offer in the data pipeline and shortcuts to libraries and frameworks that can get them an MVP up and running quickly.
 2. The data professional who needs to understand how AI can help their organisation and will need to present information to other members of the organisation being the 'AI person'.
-3. The non technical person who will want to get answers and reports from the data but who are not data scientists. They want the proverbial 'chat with data' experience.
+
+The non technical person who will want to get answers and reports from the data but who are not data scientists. They want the proverbial 'chat with data' experience.
 
 ### When and Why?
 
