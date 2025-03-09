@@ -15,6 +15,7 @@ I use GitHub to host a copy of my CV.
 - Qualified Accountant Technician and business owner.
 - Experience with REST APIs, GraphQL, React, Vue, Web Components, Node, Docker
 - Talks and workshops given at WordCamps, MeetUps and NDC.
+
 ## Talks and Workshops
 
 ### Python
