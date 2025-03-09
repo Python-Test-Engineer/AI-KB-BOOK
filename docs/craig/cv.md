@@ -22,7 +22,7 @@ I use GitHub to host a copy of my CV.
 
 - BrightonPy Feb 2025: AI as API in everyday Python apps - 60 minute talk and demo.
 
-- Django Japan Congress Feb 2025 (online): Implementing Agentic AI solutions in Django from scrathc - 45 minute talk
+- Django Japan Congress Feb 2025 (online): Implementing Agentic AI solutions in Django from scratch - 45 minute talk
 
 - Conf42 (online) Feb 2025: Implementing Agentic AI Solutions in Python from scratch - 50 minute talk.
 
