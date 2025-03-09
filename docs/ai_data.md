@@ -1,14 +1,18 @@
 # AI Agents and Data
 
-![SQL Doc](./images/sql-doc-table.png)
 
-![strategy](./images/rag/flowchart.png)
 
 ![01](./images/01-etl.png)
 
 ![02](./images/02-planning.png)
 
+![strategy](./images/rag/flowchart.png)
+
 ![03](./images/03-query.png)
+
+![SQL Doc](./images/sql-doc-table.png)
+
+
 
 ![04](./images/04-reporting.png)
 
