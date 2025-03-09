@@ -1,21 +1,6 @@
 # AI Agents and Data
 
 
-
-![01](./images/01-etl.png)
-
-![02](./images/02-planning.png)
-
-![strategy](./images/rag/flowchart.png)
-
-![03](./images/03-query.png)
-
-![SQL Doc](./images/sql-doc-table.png)
-
-
-
-![04](./images/04-reporting.png)
-
 ## Notes for meeting only...
 
 - R in Python https://pypi.org/project/rpy2/
@@ -27,16 +12,19 @@
 - SQL generation - NOT LLM uses schema to create SQL but tried and tested SQL from RAG type query.
 - Report selection router with RAG - hybrid to select best SQL query based on meta information
 - Agentic Rag and LLM workflows
-- Multi Agent systems and frameworks like ReportMaistro
+- Multi Agent systems and frameworks like LangChain's ReportMaistro
 - Using vision models for analysis and data extraction
 - Infomercial
 
 
 Where and how are AI Agents able to help us in the Data Pipeline from ETL, Analysis to Reporting?
 
+Hands on with use of notebooks.
+
 We focus on 2 types of attendees:
 
 1. The Developer/Data Scientist who wants to understand what and how AI Agents work, what they can offer in the data pipeline and shortcuts to libraries and frameworks that can get them an MVP up and running quickly.
+
 2. The data professional who needs to understand how AI can help their organisation and will need to present information to other members of the organisation being the 'AI person'.
 
 The non technical person who will want to get answers and reports from the data but who are not data scientists. They want the proverbial 'chat with data' experience.
@@ -87,3 +75,17 @@ The 3 hour workshop will cover the landscape and some implementations so that pe
 Many may need further assistance or development and D can then be in a postion to offer these. The workshop could be like the US 'Infomercial' that combines teaching value as well as product advertisement.
 
 <br>
+
+![01](./images/01-etl.png)
+
+![02](./images/02-planning.png)
+
+![strategy](./images/rag/flowchart.png)
+
+![03](./images/03-query.png)
+
+![SQL Doc](./images/sql-doc-table.png)
+
+
+
+![04](./images/04-reporting.png)
