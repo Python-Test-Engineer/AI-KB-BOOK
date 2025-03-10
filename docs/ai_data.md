@@ -89,6 +89,8 @@ Many may need further assistance or development and D can then be in a postion t
 
 ![SQL Doc](./images/sql-doc-table.png)
 
-
+It might transpire that have nested sub query docs for a given sql doc may be beneficial.
 
 ![04](./images/04-reporting.png)
+
+We may have used 'Report Maistro' to create sections of a report and in this step we might collate all of these section into one report summary.
