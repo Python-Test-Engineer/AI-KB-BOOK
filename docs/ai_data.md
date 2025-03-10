@@ -10,6 +10,8 @@
 - Prompt vs Rag vs Fine Tuning
 - Understand AI Agents from scratch
 - SQL generation - NOT LLM uses schema to create SQL but tried and tested SQL from RAG type query.
+- See this as a SEARCH issue to get best 'product' SQL Query.
+- ML on user queries and thumbs up responses.
 - Report selection router with RAG - hybrid to select best SQL query based on meta information
 - Agentic Rag and LLM workflows
 - Multi Agent systems and frameworks like LangChain's ReportMaistro
