@@ -48,8 +48,14 @@ In developing this workshop, we are developing a product/service where enterpris
 
 ![SQL Doc](./images/sql-doc-table.png)
 
+![crowd-sourced-fields](./images/rag/crowd-sourced-answers.png)
+
 It might transpire that have nested sub query docs for a given sql doc may be beneficial.
 
 ![04](./images/04-reporting.png)
+
+![RAG](./images/rag/current-rag-architecture.png)
+
+![TLDR](./images/agents/langchain-academy-researcher-PLUS.png)
 
 We may have used 'Report Maistro' to create sections of a report and in this step we might collate all of these section into one report summary.
