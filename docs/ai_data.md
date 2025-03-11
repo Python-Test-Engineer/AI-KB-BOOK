@@ -1,6 +1,6 @@
 # AI Agents and Data
 
-## Workshop ideas
+### Workshop ideas
 
 The exact content and promo description will need to be determined by us to reflect realistically how the workshop will benefit attendees.
 
@@ -14,11 +14,11 @@ The workshop will keep pace with these ideas and be very current with the latest
 - Data extraction with unstructured.io
 - 2 types of attendees - developer and the data professional that will need to inform their company about AI Agents in the Data Pipeline.
 
-The workshop will cover:
+### The workshop content:
 
 - Simplification and demystification of AI Agents by building them from scratch using notebooks with embedded slides for any theory that comments don't cover.
 - Examining where the use of AI Agents in the Data Pipeline from ETL, Analysis to Reporting can be of value.
-- Looking at two approaches to SQL queries 1). AI Agents creating the SQL on the fly and 2). Using LLMs to select the most suitable SQL Query that has been developed and tested. 
+- Looking at two approaches to SQL queries 1). AI Agents creating the SQL on the fly and 2). Using LLMs to select the most suitable SQL Query that has been developed and tested. For overall DB queries, 2 is favoured.
 - Use of LLMs and Vision models to analyse tabular data and charts etc.
 - Understanding the types of workkflows that can be used and Agentic RAG as well as Multi Agent patterns.
 - How we can synthesise reports to summarise all separate results into one report.
@@ -26,11 +26,15 @@ The workshop will cover:
 - Examining how we test and evaluate these AI Agents and workflows.
 - Use of Prompting v RAG v Fine Tuning.
 
+### Text2SQL
+
 The core is Text2SQL - when a user asks a question about data, the AI Agent will generate a SQL Query that can be executed to answer the question, along with charts and reports as requested.
 
-The apporach I favour (2), is fundamentally an AI Powered Search of the best 'product'. If we store an SQL query along with metadata, our task is to translate natural language into the best SQL Query that has been tried and tested. This would involve Hybrid Search - both keyword and semantic search.
+- Looking at two approaches to SQL queries 1). AI Agents creating the SQL on the fly and 2). Using LLMs to select the most suitable SQL Query that has been developed and tested. For overall DB queries, 2 is favoured.
+
+The approach I favour (2), is fundamentally an AI Powered Search of the best 'product'. If we store an SQL query along with metadata, our task is to translate natural language into the best SQL Query that has been tried and tested. This would involve Hybrid Search - both keyword and semantic search.
   
-## Product ideas
+### Product ideas
 
 In developing this workshop, we are developing a product/service where enterprises can 'chat' to not just their data but also to documents and other data sources.
 
@@ -38,24 +42,50 @@ In developing this workshop, we are developing a product/service where enterpris
 <br>
 
 ## Slides
+
+### ETL
+
 ![01](./images/01-etl.png)
+
+### Planning
 
 ![02](./images/02-planning.png)
 
-![strategy](./images/rag/flowchart.png)
+### Agentic RAG
+
+![RAG](./images/rag/current-rag-architecture.png)
+
+### Queries
 
 ![03](./images/03-query.png)
 
+### SQL as Doc
+
 ![SQL Doc](./images/sql-doc-table.png)
+
+### Strategy
+
+![strategy](./images/flowchart.png)
+
+### Crowd Sourced Answers
 
 ![crowd-sourced-fields](./images/rag/crowd-sourced-answers.png)
 
 It might transpire that have nested sub query docs for a given sql doc may be beneficial.
 
+
+
 ![04](./images/04-reporting.png)
 
-![RAG](./images/rag/current-rag-architecture.png)
+<!-- ### Agentic RAG
+
+![RAG](./images/rag/current-rag-architecture.png) -->
+
+### Workflows
+
+This is Langgraph buildt by Langchain and uses a Finite State Machine to define the workflow.
+
+![lakggraph](./images/rag/example-code-langgraph.png)
 
 ![TLDR](./images/agents/langchain-academy-researcher-PLUS.png)
 
-We may have used 'Report Maistro' to create sections of a report and in this step we might collate all of these section into one report summary.
