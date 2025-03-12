@@ -54,11 +54,7 @@ This provides an OpenVerdict type service for Question/Answers with sources.
 ![database-fields](./images/rag/database_fields.png)
 
 
-### User rated answers
-We also enable users to rate the responses creating a 'crowd sourced information store' that can either provide fast answers or aggregate information from many sources along with the crowd source answers.
-
-![crowd-sourced-fields](./images/rag/crowd-sourced-answers.png)
-### Response strategies
+### Agentic RAG strategies
 
 There are many and growing number of strategies for doing semantic search.
 ![RAG](./images/rag/current-rag-architecture.png)
@@ -78,6 +74,12 @@ Reports would list and summarise knowledge from:
 - Custom workflows can be made using frameworks like Langgraph etc.
 
 Being a modular system, the system can be adapted as needed as well as offering a range of options for users to choose from.
+
+### User rated answers
+We also enable users to rate the responses creating a 'crowd sourced information store' that can either provide fast answers or aggregate information from many sources along with the crowd source answers.
+
+![crowd-sourced-fields](./images/rag/crowd-sourced-answers.png)
+
 
 
 <br>
