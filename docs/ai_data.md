@@ -16,7 +16,7 @@ Using the Python library rpy2 we can also run R in Python.
 
 The exact content and promo description will need to be determined by us to reflect realistically how the workshop will benefit attendees.
 
-Would prefer to be labelled as 'Datacove XXXX' rather than Freelancer.
+Would prefer to be labelled as 'D XXXX' rather than Freelancer but that is fine.
 
 Over the next 6 months, there will be significant advances in LLM capabilities as well as dramatic cost reductions. 
 
