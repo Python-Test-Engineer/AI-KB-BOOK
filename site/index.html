@@ -1135,12 +1135,12 @@
 
 
 <h1 id="ai_powered_knowledge_systems">AI Powered Knowledge Systems<a class="headerlink" href="#ai_powered_knowledge_systems" title="Permanent link">&para;</a></h1>
-<p>This is a work in progress where I collect resources and ideas concerning AI Search, RAG, Agentic AI and AI Agents in the Data Pipeline.</p>
+<p>This is a work in progress where I collect resources and ideas concerning AI Search, Agentic AI and AI Agents in the Data Pipeline.</p>
 <p>As others have shared with me, I share my own research.</p>
 <p>The areas I am working on are:</p>
 <h2 id="ai_search">AI Search<a class="headerlink" href="#ai_search" title="Permanent link">&para;</a></h2>
-<p>Using both Semantic and traditonal keyword search, a Hybrid search system can yield the best document retrieval for RAG implementations.</p>
-<p>We get the best k results from Full Text Search/Keyword search and the k best results from semantic search, combine them together and rerank and then return N results.</p>
+<p>Using both Semantic and traditonal keyword search, a Hybrid search system can yield the best document retrieval for RAG implementations, particularly when combined with Agentic RAG strategies.</p>
+<p>We get the best k results from Full Text Search/Keyword search and the k best results from semantic search, combine them together, rerank and then return N best results.</p>
 <h2 id="agentic_rag">Agentic RAG<a class="headerlink" href="#agentic_rag" title="Permanent link">&para;</a></h2>
 <p>Retrieval Augmented Generation enables us to add domain specific data to our our prompts for better answers.</p>
 <p>Agentig RAG uses Agents to plan, retrieve, refine and generate answers using specilaist agents for each of these aspects.</p>
@@ -1148,8 +1148,11 @@
 <p><img alt="agentic-rag" src="images/agentic-rag.png" /></p>
 <h2 id="ai_agents_in_the_data_pipeline">AI Agents in the Data Pipeline<a class="headerlink" href="#ai_agents_in_the_data_pipeline" title="Permanent link">&para;</a></h2>
 <p>The use of AI Agents in the Data Pipeline from ETL, Analysis to Reporting enables us to generate reports from data sources.</p>
+<p>This is the emerge of the AI Data Analyst.</p>
 <p>Some aspects are best done with traditional Data Processing and we should not make them agentic just because that is in fashion.</p>
 <p>This can add non-deterministic bureaucracy to the data pipeline.</p>
+<p>There are two main approaches that are detailed in this book - creating SQL queries on the fly and using LLMs to select the most suitable SQL Query that has been developed and tested using AI Search of stored SQL Query Documents that contain not just the SQL but also metadata for report types and charts: </p>
+<p><a href="https://ai-powered-knowledge-systems.netlify.app/ai_data/#text2sql">https://ai-powered-knowledge-systems.netlify.app/ai_data/#text2sql</a></p>
 <p><br></p>
 
 
