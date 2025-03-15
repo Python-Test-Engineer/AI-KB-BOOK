@@ -1,6 +1,6 @@
 # AI Powered Knowledge Systems
 
-This is a work in progress where I collect resources and ideas concerning AI Search, Agentic AI and AI Agents in the Data Pipeline.
+This is a work in progress where I collect resources and ideas concerning AI Search, Agentic AI and AI Data Analyst.
 
 As others have shared with me, I share my own research.
 
@@ -23,7 +23,7 @@ An example of this is Langgraph's **agentic-RAG**:
 ![agentic-rag](./images/agentic-rag.png)
 
 
-## AI Agents in the Data Pipeline
+## AI Data Analyst
 
 The use of AI Agents in the Data Pipeline from ETL, Analysis to Reporting enables us to generate reports from data sources.
 
