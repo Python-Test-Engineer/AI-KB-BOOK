@@ -2,6 +2,8 @@
 
 ### Python
 
+- DjangoConEurope April 2025: Implementing Agentic AI solutions in Django from scratch - 90 minute workshop.
+
 - Brighton Py Feb 2025: AI as API in everyday Python apps - 60 minute talk and demo.
 
 - Django Japan Congress Feb 2025 (online): Implementing Agentic AI solutions in Django from scrathc - 45 minute talk
@@ -12,7 +14,7 @@
 
 <span style="color:orange;">Next...</span>
 
-- DjangoConEurope April 2025: Implementing Agentic AI solutions in Django from scratch - 90 minute workshop.
+- AI Agents in the Data Pipeline - 90 minute workshop. Awaiting to be announced.
 
 <hr>
 
